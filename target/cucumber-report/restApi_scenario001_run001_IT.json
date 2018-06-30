@@ -1,0 +1,145 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "# language: en"
+      }
+    ],
+    "line": 3,
+    "elements": [
+      {
+        "line": 7,
+        "name": "User calls web service to get a book by its ISBN",
+        "description": "",
+        "id": "how-to-test-rest-apis;user-calls-web-service-to-get-a-book-by-its-isbn",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3054900238,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "a book exists with an isbn of 9781451648546",
+            "match": {
+              "arguments": [
+                {
+                  "val": "9781451648546",
+                  "offset": 30
+                }
+              ],
+              "location": "restApi.a_book_exists_with_isbn(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5077872819,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "a user retrieves the book by isbn",
+            "match": {
+              "location": "restApi.a_user_retrieves_the_book_by_isbn()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 207760249,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the status code is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 19
+                }
+              ],
+              "location": "restApi.verify_status_code(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1598757562,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "response includes the following",
+            "match": {
+              "location": "restApi.response_equals(String,String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "totalItems",
+                  "1"
+                ],
+                "line": 13
+              },
+              {
+                "cells": [
+                  "kind",
+                  "books#volumes"
+                ],
+                "line": 14
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 161279316,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "response includes the following in any order",
+            "match": {
+              "location": "restApi.response_contains_in_any_order(String,String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "items.volumeInfo.title",
+                  "Steve Jobs"
+                ],
+                "line": 16
+              },
+              {
+                "cells": [
+                  "items.volumeInfo.publisher",
+                  "Simon and Schuster"
+                ],
+                "line": 17
+              },
+              {
+                "cells": [
+                  "items.volumeInfo.pageCount",
+                  "630"
+                ],
+                "line": 18
+              }
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 6,
+            "name": "@rest"
+          }
+        ]
+      }
+    ],
+    "name": "How to test Rest Apis",
+    "description": "I want to use this template for my feature file to test Rest Apis",
+    "id": "how-to-test-rest-apis",
+    "keyword": "Feature",
+    "uri": "target/parallel/features/restApi_scenario001_run001_IT.feature"
+  }
+]

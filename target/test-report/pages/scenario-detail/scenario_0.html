@@ -1,0 +1,269 @@
+<!--
+Copyright 2018 trivago N.V.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.    --><!doctype html>
+<html lang="en">
+ <head>
+  <base href="../..">  
+  <meta charset="utf-8"> 
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+  <meta name="description" content="Cluecumber Report Plugin [1.0.0] - Scenario Details"> 
+  <meta name="author" content="Cluecumber Report Plugin [1.0.0]"> 
+  <title>Scenario Details - 2018/06/30 08:35:01</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"> 
+  <link href="css/cluecumber.css" rel="stylesheet" type="text/css"> 
+  <link rel="stylesheet" href="css/dataTables.min.css"> 
+  <link rel="stylesheet" href="css/dataTables.bootstrap4.min.css"> 
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css"> 
+ </head> 
+ <body> 
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"> 
+   <span class="navbar-brand">Scenario Details</span> 
+   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button> 
+   <div class="collapse navbar-collapse" index="navbarSupportedContent"> 
+    <ul class="navbar-nav mr-auto"> 
+     <li class="nav-item"> <a class="nav-link" href="pages/feature-summary.html">All Features</a> </li> 
+     <li class="nav-item"> <a class="nav-link" href="pages/tag-summary.html">All Tags</a> </li> 
+     <li class="nav-item"> <a class="nav-link" href="index.html">All Scenarios</a> </li> 
+    </ul> 
+    <span class="text-light">2018/06/30 08:35:01</span> 
+   </div> 
+  </nav> 
+  <main role="main" class="container"> 
+   <div class="cluecumber-template"> 
+    <div class="pb-2 mt-4 mb-2 border-bottom"> 
+     <h3>Scenario 'User calls web service to get a book by its ISBN'</h3> 
+    </div> 
+    <script>
+        function resizeIframe(obj) {
+            obj.style.height = (obj.contentWindow.document.body.scrollHeight + 20) + 'px';
+        }
+    </script> 
+    <div class="row"> 
+     <div class="col-sm-8"> 
+      <div class="card h-100"> 
+       <div class="card-header">
+        Scenario Result Chart
+       </div> 
+       <div class="card-body"> 
+        <div id="canvas-holder" class="w-100 text-center"> 
+         <canvas id="chart-area" class="w-100"></canvas> 
+        </div> 
+       </div> 
+      </div> 
+     </div> 
+     <div class="col-sm-4"> 
+      <div class="card h-100"> 
+       <div class="card-header">
+        Scenario Information
+       </div> 
+       <div class="card-body"> 
+        <ul class="list-group list-group-flush"> 
+         <li class="list-group-item"><strong>5</strong> Steps</li> 
+         <li class="list-group-item"><strong>5</strong> passed</li> 
+         <li class="list-group-item"><strong>0</strong> failed</li> 
+         <li class="list-group-item"><strong>0</strong> skipped</li> 
+         <li class="list-group-item"><strong>Time:</strong> 0m 10s 100ms</li> 
+         <li class="list-group-item"><a href="pages/tag-scenarios/tag_rest.html">@rest</a></li> 
+        </ul> 
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+    <div class="col-sm-12"> 
+     <div class="card h-100"> 
+      <div class="card-header">
+       User calls web service to get a book by its ISBN
+      </div> 
+      <div class="card-body"> 
+       <ul class="list-group list-group-flush"> 
+        <li class="list-group-item"> 
+         <div class="row"> 
+          <div class="col-1 text-left"> 
+           <nobr>
+            Step 1
+           </nobr> 
+          </div> 
+          <div class="col-7 text-left"> 
+           <span data-toggle="tooltip" title="restApi.a_book_exists_with_isbn(String)"> Given a book exists with an isbn of <strong>9781451648546</strong> </span> 
+          </div> 
+          <div class="col-2 text-left"> 
+           <nobr>
+            0m 03s 054ms
+           </nobr> 
+          </div> 
+          <div class="col-2 text-right"> 
+           <span class="text-success">passed</span> 
+          </div> 
+         </div> 
+         <div class="row"> 
+          <div class="col-1 text-left"> 
+           <nobr>
+            Step 2
+           </nobr> 
+          </div> 
+          <div class="col-7 text-left"> 
+           <span data-toggle="tooltip" title="restApi.a_user_retrieves_the_book_by_isbn()"> When a user retrieves the book by isbn </span> 
+          </div> 
+          <div class="col-2 text-left"> 
+           <nobr>
+            0m 05s 077ms
+           </nobr> 
+          </div> 
+          <div class="col-2 text-right"> 
+           <span class="text-success">passed</span> 
+          </div> 
+         </div> 
+         <div class="row"> 
+          <div class="col-1 text-left"> 
+           <nobr>
+            Step 3
+           </nobr> 
+          </div> 
+          <div class="col-7 text-left"> 
+           <span data-toggle="tooltip" title="restApi.verify_status_code(int)"> Then the status code is <strong>200</strong> </span> 
+          </div> 
+          <div class="col-2 text-left"> 
+           <nobr>
+            0m 00s 207ms
+           </nobr> 
+          </div> 
+          <div class="col-2 text-right"> 
+           <span class="text-success">passed</span> 
+          </div> 
+         </div> 
+         <div class="row"> 
+          <div class="col-1 text-left"> 
+           <nobr>
+            Step 4
+           </nobr> 
+          </div> 
+          <div class="col-7 text-left"> 
+           <span data-toggle="tooltip" title="restApi.response_equals(String,String>)"> And response includes the following </span> 
+           <table class="table table-hover table-sm compact"> 
+            <tbody>
+             <tr> 
+              <td>totalItems</td> 
+              <td>1</td> 
+             </tr> 
+             <tr> 
+              <td>kind</td> 
+              <td>books#volumes</td> 
+             </tr> 
+            </tbody>
+           </table> 
+          </div> 
+          <div class="col-2 text-left"> 
+           <nobr>
+            0m 01s 598ms
+           </nobr> 
+          </div> 
+          <div class="col-2 text-right"> 
+           <span class="text-success">passed</span> 
+          </div> 
+         </div> 
+         <div class="row"> 
+          <div class="col-1 text-left"> 
+           <nobr>
+            Step 5
+           </nobr> 
+          </div> 
+          <div class="col-7 text-left"> 
+           <span data-toggle="tooltip" title="restApi.response_contains_in_any_order(String,String>)"> And response includes the following in any order </span> 
+           <table class="table table-hover table-sm compact"> 
+            <tbody>
+             <tr> 
+              <td>items.volumeInfo.title</td> 
+              <td>Steve Jobs</td> 
+             </tr> 
+             <tr> 
+              <td>items.volumeInfo.publisher</td> 
+              <td>Simon and Schuster</td> 
+             </tr> 
+             <tr> 
+              <td>items.volumeInfo.pageCount</td> 
+              <td>630</td> 
+             </tr> 
+            </tbody>
+           </table> 
+          </div> 
+          <div class="col-2 text-left"> 
+           <nobr>
+            0m 00s 161ms
+           </nobr> 
+          </div> 
+          <div class="col-2 text-right"> 
+           <span class="text-success">passed</span> 
+          </div> 
+         </div> </li> 
+       </ul> 
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+  </main> 
+  <footer class="footer navbar-dark bg-dark"> 
+   <div class="container-fluid"> 
+    <span class="text-muted">Generated by Cluecumber Report Plugin [1.0.0], 2018/06/30 08:35:01.</span> 
+   </div> 
+  </footer>
+  <script src="js/jquery.min.js"></script> 
+  <script src="js/popper.min.js"></script> 
+  <script src="js/bootstrap.min.js"></script> 
+  <script src="js/datatables.min.js"></script> 
+  <script src="js/jquery.fancybox.min.js"></script> 
+  <script src="js/Chart.bundle.min.js"></script> 
+  <script>
+    $(document).ready(function () {
+        // Data tables
+        var dataTable = $('.renderAsDataTable').on('draw.dt', function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        }).DataTable({
+            "oLanguage": {
+                "sSearch": "Search all columns:"
+            }
+        });
+
+        // Lightbox
+        $("a.grouped_elements").fancybox();
+
+        // Tool tips
+        $('[data-toggle="tooltip"]').tooltip();
+
+        // Chart
+                    var ctx = document.getElementById('chart-area').getContext("2d");
+            new Chart(ctx, eval({
+  "data" : {
+    "labels" : [ "Step 1", "Step 2", "Step 3", "Step 4", "Step 5" ],
+    "datasets" : [ {
+      "data" : [ 3054.0, 5077.0, 207.0, 1598.0, 161.0 ],
+      "backgroundColor" : [ "rgba(40,167,69,1.000)", "rgba(40,167,69,1.000)", "rgba(40,167,69,1.000)", "rgba(40,167,69,1.000)", "rgba(40,167,69,1.000)" ],
+      "label" : "Step runtime"
+    } ]
+  },
+  "options" : {
+    "scales" : {
+      "xAxes" : [ {
+        "ticks" : {
+          "min" : 0
+        }
+      } ]
+    }
+  },
+  "type" : "bar"
+}));
+    })
+</script>   
+ </body>
+</html>
