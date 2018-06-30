@@ -1,3 +1,4 @@
 restApi_scenario001_run001_IT.class
+restApi_scenario002_run001_IT.class
 runner\cucable.class
 stepDefs\restApi.class

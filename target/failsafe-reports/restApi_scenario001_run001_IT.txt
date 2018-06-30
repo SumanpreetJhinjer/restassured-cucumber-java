@@ -1,4 +1,16 @@
 -------------------------------------------------------------------------------
 Test set: restApi_scenario001_run001_IT
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.925 s - in restApi_scenario001_run001_IT
+Tests run: 6, Failures: 2, Errors: 0, Skipped: 2, Time elapsed: 25.081 s <<< FAILURE! - in restApi_scenario001_run001_IT
+Then the status code is 201(Scenario: User calls web service to get a book by its ISBN)  Time elapsed: 0.142 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <201> but was <200>.
+
+
+Scenario: User calls web service to get a book by its ISBN  Time elapsed: 0.144 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <201> but was <200>.
+
+

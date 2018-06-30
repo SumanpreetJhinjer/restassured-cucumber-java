@@ -12,7 +12,7 @@
         "before": [
           {
             "result": {
-              "duration": 274729,
+              "duration": 283528,
               "status": "passed"
             },
             "match": {
@@ -21,13 +21,13 @@
           }
         ],
         "line": 6,
-        "name": "User calls web service to get a book by its ISBN",
+        "name": "User calls web service to get correct book by its ISBN",
         "description": "",
-        "id": "how-to-test-rest-apis;user-calls-web-service-to-get-a-book-by-its-isbn",
+        "id": "how-to-test-rest-apis;user-calls-web-service-to-get-correct-book-by-its-isbn",
         "after": [
           {
             "result": {
-              "duration": 178916,
+              "duration": 143230,
               "status": "passed"
             },
             "match": {
@@ -40,7 +40,7 @@
         "steps": [
           {
             "result": {
-              "duration": 6320154512,
+              "duration": 6687877141,
               "status": "passed"
             },
             "line": 8,
@@ -61,7 +61,7 @@
               "{\n    \"kind\": \"books#volumes\",\n    \"totalItems\": 1,\n    \"items\": [\n        {\n            \"kind\": \"books#volume\",\n            \"id\": \"8U2oAAAAQBAJ\",\n            \"etag\": \"RPHTzlw7e4g\",\n            \"selfLink\": \"https://www.googleapis.com/books/v1/volumes/8U2oAAAAQBAJ\",\n            \"volumeInfo\": {\n                \"title\": \"Steve Jobs\",\n                \"authors\": [\n                    \"Walter Isaacson\"\n                ],\n                \"publisher\": \"Simon and Schuster\",\n                \"publishedDate\": \"2011\",\n                \"description\": \"Draws on more than forty interviews with Steve Jobs, as well as interviews with family members, friends, competitors, and colleagues to offer a look at the co-founder and leading creative force behind the Apple computer company.\",\n                \"industryIdentifiers\": [\n                    {\n                        \"type\": \"ISBN_13\",\n                        \"identifier\": \"9781451648546\"\n                    },\n                    {\n                        \"type\": \"ISBN_10\",\n                        \"identifier\": \"1451648545\"\n                    }\n                ],\n                \"readingModes\": {\n                    \"text\": false,\n                    \"image\": false\n                },\n                \"pageCount\": 630,\n                \"printType\": \"BOOK\",\n                \"categories\": [\n                    \"Biography \u0026 Autobiography\"\n                ],\n                \"averageRating\": 4.0,\n                \"ratingsCount\": 3906,\n                \"maturityRating\": \"NOT_MATURE\",\n                \"allowAnonLogging\": false,\n                \"contentVersion\": \"0.3.0.0.preview.0\",\n                \"imageLinks\": {\n                    \"smallThumbnail\": \"http://books.google.com/books/content?id\u003d8U2oAAAAQBAJ\u0026printsec\u003dfrontcover\u0026img\u003d1\u0026zoom\u003d5\u0026edge\u003dcurl\u0026source\u003dgbs_api\",\n                    \"thumbnail\": \"http://books.google.com/books/content?id\u003d8U2oAAAAQBAJ\u0026printsec\u003dfrontcover\u0026img\u003d1\u0026zoom\u003d1\u0026edge\u003dcurl\u0026source\u003dgbs_api\"\n                },\n                \"language\": \"en\",\n                \"previewLink\": \"http://books.google.com.au/books?id\u003d8U2oAAAAQBAJ\u0026printsec\u003dfrontcover\u0026dq\u003disbn:9781451648546\u0026hl\u003d\u0026cd\u003d1\u0026source\u003dgbs_api\",\n                \"infoLink\": \"http://books.google.com.au/books?id\u003d8U2oAAAAQBAJ\u0026dq\u003disbn:9781451648546\u0026hl\u003d\u0026source\u003dgbs_api\",\n                \"canonicalVolumeLink\": \"https://books.google.com/books/about/Steve_Jobs.html?hl\u003d\u0026id\u003d8U2oAAAAQBAJ\"\n            },\n            \"saleInfo\": {\n                \"country\": \"AU\",\n                \"saleability\": \"NOT_FOR_SALE\",\n                \"isEbook\": false\n            },\n            \"accessInfo\": {\n                \"country\": \"AU\",\n                \"viewability\": \"PARTIAL\",\n                \"embeddable\": true,\n                \"publicDomain\": false,\n                \"textToSpeechPermission\": \"ALLOWED_FOR_ACCESSIBILITY\",\n                \"epub\": {\n                    \"isAvailable\": false\n                },\n                \"pdf\": {\n                    \"isAvailable\": false\n                },\n                \"webReaderLink\": \"http://play.google.com/books/reader?id\u003d8U2oAAAAQBAJ\u0026hl\u003d\u0026printsec\u003dfrontcover\u0026source\u003dgbs_api\",\n                \"accessViewStatus\": \"SAMPLE\",\n                \"quoteSharingAllowed\": false\n            },\n            \"searchInfo\": {\n                \"textSnippet\": \"Draws on more than forty interviews with Steve Jobs, as well as interviews with family members, friends, competitors, and colleagues to offer a look at the co-founder and leading creative force behind the Apple computer company.\"\n            }\n        }\n    ]\n}"
             ],
             "result": {
-              "duration": 13946762799,
+              "duration": 12855079740,
               "status": "passed"
             },
             "line": 9,
@@ -73,19 +73,18 @@
           },
           {
             "output": [
-              "Expected Status Code: 201 Actual status code: 200"
+              "Expected Status Code: 200 Actual status code: 200"
             ],
             "result": {
-              "duration": 623987611,
-              "error_message": "java.lang.AssertionError: 1 expectation failed.\nExpected status code \u003c201\u003e but was \u003c200\u003e.\n\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:83)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:77)\r\n\tat org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)\r\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:60)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:235)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:483)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)\r\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:655)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:564)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)\r\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:52)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:154)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:123)\r\n\tat io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)\r\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:52)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:154)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:131)\r\n\tat io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:119)\r\n\tat stepDefs.restApi.verify_status_code(restApi.java:58)\r\n\tat ✽.Then the status code is 201(target/parallel/features/restApi_scenario001_run001_IT.feature:10)\r\n",
-              "status": "failed"
+              "duration": 250413559,
+              "status": "passed"
             },
             "line": 10,
-            "name": "the status code is 201",
+            "name": "the status code is 200",
             "match": {
               "arguments": [
                 {
-                  "val": "201",
+                  "val": "200",
                   "offset": 19
                 }
               ],
@@ -95,7 +94,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 2432711072,
+              "status": "passed"
             },
             "line": 11,
             "name": "response includes the following",
@@ -122,11 +122,9 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 118299949,
+              "status": "passed"
             },
-            "output": [
-              "\u003chtml\u003e\u003cfont size\u003d\"3\" face\u003d\"verdana\" color\u003d\"red\"\u003eScenario is failed please see the stacktrace for more info\u003c/font\u003e\u003c/html\u003e"
-            ],
             "line": 14,
             "name": "response includes the following in any order",
             "match": {
@@ -164,6 +162,6 @@
     "description": "I want to use this template for my feature file to test Rest Apis",
     "id": "how-to-test-rest-apis",
     "keyword": "Feature",
-    "uri": "target/parallel/features/restApi_scenario001_run001_IT.feature"
+    "uri": "target/parallel/features/restApi_scenario002_run001_IT.feature"
   }
 ]

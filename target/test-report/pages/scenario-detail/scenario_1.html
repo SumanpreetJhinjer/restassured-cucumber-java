@@ -20,7 +20,7 @@ limitations under the License.    --><!doctype html>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
   <meta name="description" content="Cluecumber Report Plugin [1.0.0] - Scenario Details"> 
   <meta name="author" content="Cluecumber Report Plugin [1.0.0]"> 
-  <title>Scenario Details - 2018/06/30 10:56:50</title>
+  <title>Scenario Details - 2018/06/30 10:56:52</title>
   <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"> 
   <link href="css/cluecumber.css" rel="stylesheet" type="text/css"> 
   <link rel="stylesheet" href="css/dataTables.min.css"> 
@@ -37,13 +37,13 @@ limitations under the License.    --><!doctype html>
      <li class="nav-item"> <a class="nav-link" href="pages/tag-summary.html">All Tags</a> </li> 
      <li class="nav-item"> <a class="nav-link" href="index.html">All Scenarios</a> </li> 
     </ul> 
-    <span class="text-light">2018/06/30 10:56:50</span> 
+    <span class="text-light">2018/06/30 10:56:52</span> 
    </div> 
   </nav> 
   <main role="main" class="container"> 
    <div class="cluecumber-template"> 
     <div class="pb-2 mt-4 mb-2 border-bottom"> 
-     <h3>Scenario 'User calls web service to get a book by its ISBN'</h3> 
+     <h3>Scenario 'User calls web service to get correct book by its ISBN'</h3> 
     </div> 
     <script>
         function resizeIframe(obj) {
@@ -71,10 +71,10 @@ limitations under the License.    --><!doctype html>
        <div class="card-body"> 
         <ul class="list-group list-group-flush"> 
          <li class="list-group-item"><strong>5</strong> Steps</li> 
-         <li class="list-group-item"><strong>2</strong> passed</li> 
-         <li class="list-group-item"><strong>1</strong> failed</li> 
-         <li class="list-group-item"><strong>2</strong> skipped</li> 
-         <li class="list-group-item"><strong>Time:</strong> 0m 20s 891ms</li> 
+         <li class="list-group-item"><strong>5</strong> passed</li> 
+         <li class="list-group-item"><strong>0</strong> failed</li> 
+         <li class="list-group-item"><strong>0</strong> skipped</li> 
+         <li class="list-group-item"><strong>Time:</strong> 0m 22s 344ms</li> 
         </ul> 
        </div> 
       </div> 
@@ -83,7 +83,7 @@ limitations under the License.    --><!doctype html>
     <div class="col-sm-12"> 
      <div class="card h-100"> 
       <div class="card-header">
-       User calls web service to get a book by its ISBN
+       User calls web service to get correct book by its ISBN
       </div> 
       <div class="card-body"> 
        <ul class="list-group list-group-flush"> 
@@ -119,7 +119,7 @@ limitations under the License.    --><!doctype html>
           </div> 
           <div class="col-2 text-left"> 
            <nobr>
-            0m 06s 320ms
+            0m 06s 687ms
            </nobr> 
           </div> 
           <div class="col-2 text-right"> 
@@ -137,7 +137,7 @@ limitations under the License.    --><!doctype html>
           </div> 
           <div class="col-2 text-left"> 
            <nobr>
-            0m 13s 946ms
+            0m 12s 855ms
            </nobr> 
           </div> 
           <div class="col-2 text-right"> 
@@ -234,28 +234,21 @@ limitations under the License.    --><!doctype html>
            </nobr> 
           </div> 
           <div class="col-7 text-left"> 
-           <span data-toggle="tooltip" title="restApi.verify_status_code(int)"> Then the status code is <strong>201</strong> </span> 
+           <span data-toggle="tooltip" title="restApi.verify_status_code(int)"> Then the status code is <strong>200</strong> </span> 
           </div> 
           <div class="col-2 text-left"> 
            <nobr>
-            0m 00s 623ms
+            0m 00s 250ms
            </nobr> 
           </div> 
           <div class="col-2 text-right"> 
-           <span class="text-danger">failed</span> 
+           <span class="text-success">passed</span> 
           </div> 
-         </div> 
-         <div class="row"> 
-          <div class="col-1"></div> 
-          <div class="col-10 text-left border border-danger"> 
-           <code>java.lang.AssertionError: 1 expectation failed. Expected status code &lt;201&gt; but was &lt;200&gt;. at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488) at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:83) at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:77) at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84) at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:60) at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:235) at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247) at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:483) at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source) at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48) at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113) at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125) at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:655) at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) at java.base/java.lang.reflect.Method.invoke(Method.java:564) at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210) at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59) at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:52) at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:154) at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166) at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:123) at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source) at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:52) at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:154) at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166) at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:131) at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:119) at stepDefs.restApi.verify_status_code(restApi.java:58) at ✽.Then the status code is 201(target/parallel/features/restApi_scenario001_run001_IT.feature:10) </code> 
-          </div> 
-          <div class="col-1"></div> 
          </div> 
          <div class="row"> 
           <div class="col-1"></div> 
           <div class="col-10 text-left"> 
-           <iframe srcdoc="Expected Status Code: 201 Actual status code: 200" width="100%" height="1" scrolling="yes" onload="resizeIframe(this);"></iframe> 
+           <iframe srcdoc="Expected Status Code: 200 Actual status code: 200" width="100%" height="1" scrolling="yes" onload="resizeIframe(this);"></iframe> 
           </div> 
           <div class="col-1"></div> 
          </div> 
@@ -282,11 +275,11 @@ limitations under the License.    --><!doctype html>
           </div> 
           <div class="col-2 text-left"> 
            <nobr>
-            0m 00s 000ms
+            0m 02s 432ms
            </nobr> 
           </div> 
           <div class="col-2 text-right"> 
-           <span class="text-warning">skipped</span> 
+           <span class="text-success">passed</span> 
           </div> 
          </div> 
          <div class="row"> 
@@ -316,19 +309,12 @@ limitations under the License.    --><!doctype html>
           </div> 
           <div class="col-2 text-left"> 
            <nobr>
-            0m 00s 000ms
+            0m 00s 118ms
            </nobr> 
           </div> 
           <div class="col-2 text-right"> 
-           <span class="text-warning">skipped</span> 
+           <span class="text-success">passed</span> 
           </div> 
-         </div> 
-         <div class="row"> 
-          <div class="col-1"></div> 
-          <div class="col-10 text-left"> 
-           <iframe srcdoc="<html><font size=&quot;3&quot; face=&quot;verdana&quot; color=&quot;red&quot;>Scenario is failed please see the stacktrace for more info</font></html>" width="100%" height="1" scrolling="yes" onload="resizeIframe(this);"></iframe> 
-          </div> 
-          <div class="col-1"></div> 
          </div> </li> 
         <li class="list-group-item" style="opacity:.8"> 
          <div class="row"> 
@@ -358,7 +344,7 @@ limitations under the License.    --><!doctype html>
   </main> 
   <footer class="footer navbar-dark bg-dark"> 
    <div class="container-fluid"> 
-    <span class="text-muted">Generated by Cluecumber Report Plugin [1.0.0], 2018/06/30 10:56:50.</span> 
+    <span class="text-muted">Generated by Cluecumber Report Plugin [1.0.0], 2018/06/30 10:56:52.</span> 
    </div> 
   </footer>
   <script src="js/jquery.min.js"></script> 
@@ -390,8 +376,8 @@ limitations under the License.    --><!doctype html>
   "data" : {
     "labels" : [ "Step 1", "Step 2", "Step 3", "Step 4", "Step 5" ],
     "datasets" : [ {
-      "data" : [ 6320.0, 13946.0, 623.0, 0.0, 0.0 ],
-      "backgroundColor" : [ "rgba(40,167,69,1.000)", "rgba(40,167,69,1.000)", "rgba(220,53,69,1.000)", "rgba(255,193,7,1.000)", "rgba(255,193,7,1.000)" ],
+      "data" : [ 6687.0, 12855.0, 250.0, 2432.0, 118.0 ],
+      "backgroundColor" : [ "rgba(40,167,69,1.000)", "rgba(40,167,69,1.000)", "rgba(40,167,69,1.000)", "rgba(40,167,69,1.000)", "rgba(40,167,69,1.000)" ],
       "label" : "Step runtime"
     } ]
   },
