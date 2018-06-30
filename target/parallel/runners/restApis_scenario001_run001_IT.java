@@ -6,10 +6,10 @@ import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = {"target/parallel/features/restApi_scenario001_run001_IT.feature"},
-        plugin = {"json:target/cucumber-report/restApi_scenario001_run001_IT.json"}
+        features = {"target/parallel/features/restApis_scenario001_run001_IT.feature"},
+        plugin = {"json:target/cucumber-report/restApis_scenario001_run001_IT.json"}
 )
-public class restApi_scenario001_run001_IT {
+public class restApis_scenario001_run001_IT {
 
 }
 

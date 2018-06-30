@@ -1,4 +1,6 @@
-restApi_scenario001_run001_IT.class
-restApi_scenario002_run001_IT.class
+stepDefs\restApis.class
+restApis_scenario001_run001_IT.class
 runner\cucable.class
-stepDefs\restApi.class
+runner\local.class
+restApis_scenario002_run001_IT.class
+utility\testBase.class

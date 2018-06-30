@@ -6,32 +6,32 @@
         "value": "# language: en"
       }
     ],
-    "line": 3,
+    "line": 4,
     "elements": [
       {
         "before": [
           {
             "result": {
-              "duration": 283528,
+              "duration": 236599,
               "status": "passed"
             },
             "match": {
-              "location": "restApi.setup(Scenario)"
+              "location": "testBase.setupGoogle(Scenario)"
             }
           }
         ],
-        "line": 6,
+        "line": 7,
         "name": "User calls web service to get correct book by its ISBN",
         "description": "",
         "id": "how-to-test-rest-apis;user-calls-web-service-to-get-correct-book-by-its-isbn",
         "after": [
           {
             "result": {
-              "duration": 143230,
+              "duration": 166694,
               "status": "passed"
             },
             "match": {
-              "location": "restApi.closer(Scenario)"
+              "location": "testBase.closer(Scenario)"
             }
           }
         ],
@@ -40,10 +40,10 @@
         "steps": [
           {
             "result": {
-              "duration": 6687877141,
+              "duration": 5720541968,
               "status": "passed"
             },
-            "line": 8,
+            "line": 9,
             "name": "a book exists with an isbn of 9781451648546",
             "match": {
               "arguments": [
@@ -52,7 +52,7 @@
                   "offset": 30
                 }
               ],
-              "location": "restApi.a_book_exists_with_isbn(String)"
+              "location": "restApis.a_book_exists_with_isbn(String)"
             },
             "keyword": "Given "
           },
@@ -61,13 +61,13 @@
               "{\n    \"kind\": \"books#volumes\",\n    \"totalItems\": 1,\n    \"items\": [\n        {\n            \"kind\": \"books#volume\",\n            \"id\": \"8U2oAAAAQBAJ\",\n            \"etag\": \"RPHTzlw7e4g\",\n            \"selfLink\": \"https://www.googleapis.com/books/v1/volumes/8U2oAAAAQBAJ\",\n            \"volumeInfo\": {\n                \"title\": \"Steve Jobs\",\n                \"authors\": [\n                    \"Walter Isaacson\"\n                ],\n                \"publisher\": \"Simon and Schuster\",\n                \"publishedDate\": \"2011\",\n                \"description\": \"Draws on more than forty interviews with Steve Jobs, as well as interviews with family members, friends, competitors, and colleagues to offer a look at the co-founder and leading creative force behind the Apple computer company.\",\n                \"industryIdentifiers\": [\n                    {\n                        \"type\": \"ISBN_13\",\n                        \"identifier\": \"9781451648546\"\n                    },\n                    {\n                        \"type\": \"ISBN_10\",\n                        \"identifier\": \"1451648545\"\n                    }\n                ],\n                \"readingModes\": {\n                    \"text\": false,\n                    \"image\": false\n                },\n                \"pageCount\": 630,\n                \"printType\": \"BOOK\",\n                \"categories\": [\n                    \"Biography \u0026 Autobiography\"\n                ],\n                \"averageRating\": 4.0,\n                \"ratingsCount\": 3906,\n                \"maturityRating\": \"NOT_MATURE\",\n                \"allowAnonLogging\": false,\n                \"contentVersion\": \"0.3.0.0.preview.0\",\n                \"imageLinks\": {\n                    \"smallThumbnail\": \"http://books.google.com/books/content?id\u003d8U2oAAAAQBAJ\u0026printsec\u003dfrontcover\u0026img\u003d1\u0026zoom\u003d5\u0026edge\u003dcurl\u0026source\u003dgbs_api\",\n                    \"thumbnail\": \"http://books.google.com/books/content?id\u003d8U2oAAAAQBAJ\u0026printsec\u003dfrontcover\u0026img\u003d1\u0026zoom\u003d1\u0026edge\u003dcurl\u0026source\u003dgbs_api\"\n                },\n                \"language\": \"en\",\n                \"previewLink\": \"http://books.google.com.au/books?id\u003d8U2oAAAAQBAJ\u0026printsec\u003dfrontcover\u0026dq\u003disbn:9781451648546\u0026hl\u003d\u0026cd\u003d1\u0026source\u003dgbs_api\",\n                \"infoLink\": \"http://books.google.com.au/books?id\u003d8U2oAAAAQBAJ\u0026dq\u003disbn:9781451648546\u0026hl\u003d\u0026source\u003dgbs_api\",\n                \"canonicalVolumeLink\": \"https://books.google.com/books/about/Steve_Jobs.html?hl\u003d\u0026id\u003d8U2oAAAAQBAJ\"\n            },\n            \"saleInfo\": {\n                \"country\": \"AU\",\n                \"saleability\": \"NOT_FOR_SALE\",\n                \"isEbook\": false\n            },\n            \"accessInfo\": {\n                \"country\": \"AU\",\n                \"viewability\": \"PARTIAL\",\n                \"embeddable\": true,\n                \"publicDomain\": false,\n                \"textToSpeechPermission\": \"ALLOWED_FOR_ACCESSIBILITY\",\n                \"epub\": {\n                    \"isAvailable\": false\n                },\n                \"pdf\": {\n                    \"isAvailable\": false\n                },\n                \"webReaderLink\": \"http://play.google.com/books/reader?id\u003d8U2oAAAAQBAJ\u0026hl\u003d\u0026printsec\u003dfrontcover\u0026source\u003dgbs_api\",\n                \"accessViewStatus\": \"SAMPLE\",\n                \"quoteSharingAllowed\": false\n            },\n            \"searchInfo\": {\n                \"textSnippet\": \"Draws on more than forty interviews with Steve Jobs, as well as interviews with family members, friends, competitors, and colleagues to offer a look at the co-founder and leading creative force behind the Apple computer company.\"\n            }\n        }\n    ]\n}"
             ],
             "result": {
-              "duration": 12855079740,
+              "duration": 11361297793,
               "status": "passed"
             },
-            "line": 9,
+            "line": 10,
             "name": "a user retrieves the book by isbn",
             "match": {
-              "location": "restApi.a_user_retrieves_the_book_by_isbn()"
+              "location": "restApis.a_user_retrieves_the_book_by_isbn()"
             },
             "keyword": "When "
           },
@@ -76,10 +76,10 @@
               "Expected Status Code: 200 Actual status code: 200"
             ],
             "result": {
-              "duration": 250413559,
+              "duration": 267716566,
               "status": "passed"
             },
-            "line": 10,
+            "line": 11,
             "name": "the status code is 200",
             "match": {
               "arguments": [
@@ -88,19 +88,19 @@
                   "offset": 19
                 }
               ],
-              "location": "restApi.verify_status_code(int)"
+              "location": "restApis.verify_status_code(int)"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 2432711072,
+              "duration": 3201226893,
               "status": "passed"
             },
-            "line": 11,
+            "line": 12,
             "name": "response includes the following",
             "match": {
-              "location": "restApi.response_equals(String,String\u003e)"
+              "location": "restApis.response_equals(String,String\u003e)"
             },
             "rows": [
               {
@@ -108,27 +108,27 @@
                   "totalItems",
                   "1"
                 ],
-                "line": 12
+                "line": 13
               },
               {
                 "cells": [
                   "kind",
                   "books#volumes"
                 ],
-                "line": 13
+                "line": 14
               }
             ],
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 118299949,
+              "duration": 226837748,
               "status": "passed"
             },
-            "line": 14,
+            "line": 15,
             "name": "response includes the following in any order",
             "match": {
-              "location": "restApi.response_contains_in_any_order(String,String\u003e)"
+              "location": "restApis.response_contains_in_any_order(String,String\u003e)"
             },
             "rows": [
               {
@@ -136,21 +136,21 @@
                   "items.volumeInfo.title",
                   "Steve Jobs"
                 ],
-                "line": 15
+                "line": 16
               },
               {
                 "cells": [
                   "items.volumeInfo.publisher",
                   "Simon and Schuster"
                 ],
-                "line": 16
+                "line": 17
               },
               {
                 "cells": [
                   "items.volumeInfo.pageCount",
                   "630"
                 ],
-                "line": 17
+                "line": 18
               }
             ],
             "keyword": "And "
@@ -162,6 +162,12 @@
     "description": "I want to use this template for my feature file to test Rest Apis",
     "id": "how-to-test-rest-apis",
     "keyword": "Feature",
-    "uri": "target/parallel/features/restApi_scenario002_run001_IT.feature"
+    "uri": "target/parallel/features/restApis_scenario002_run001_IT.feature",
+    "tags": [
+      {
+        "line": 3,
+        "name": "@googleAPI"
+      }
+    ]
   }
 ]
