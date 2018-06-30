@@ -5,15 +5,15 @@ import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
 
-public class testBase {
+public class hook {
 
-	public static String ENDPOINT_GET_BOOK_BY_ISBN;
+	public static String apiURL;
 	public static Scenario scenario;
 	@Before("@googleAPI")
 	public void setupGoogle(Scenario scenario) {
 		 
 		this.scenario = scenario;    
-		ENDPOINT_GET_BOOK_BY_ISBN = "https://www.googleapis.com/books/v1/volumes";
+		apiURL = "https://www.googleapis.com/books/v1/volumes";
 	} 
 	
 	
@@ -28,7 +28,8 @@ public class testBase {
 	public static String getAPIURL() //replaced webdriver with android driver
 	{
 		
-		return ENDPOINT_GET_BOOK_BY_ISBN;
+		return apiURL;
+		
 	}
 	public static Scenario getScenario() //replaced webdriver with android driver
 	{
