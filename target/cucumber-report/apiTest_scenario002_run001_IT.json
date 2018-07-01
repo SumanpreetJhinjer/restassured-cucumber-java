@@ -1,0 +1,129 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "# language: en"
+      }
+    ],
+    "line": 4,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1838650291,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hook.setupReqire(Scenario)"
+            }
+          }
+        ],
+        "line": 7,
+        "name": "reqire api test user2",
+        "description": "",
+        "id": "how-to-test-rest-apis;reqire-api-test-user2",
+        "after": [
+          {
+            "result": {
+              "duration": 134431,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hook.closer(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2034131838,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "a user exist in the api with id 2",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 32
+                }
+              ],
+              "location": "apiTest.a_user_exists_with_id(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "output": [
+              "Expected Status Code: 200 Actual status code: 200"
+            ],
+            "result": {
+              "duration": 61270810,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the status code is 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 19
+                }
+              ],
+              "location": "restApis.verify_status_code(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "output": [
+              "Expected body content: id Actual body content: true",
+              "Expected body content: 2 Actual body content: true",
+              "Expected body content: first_name Actual body content: true",
+              "Expected body content: Janet Actual body content: true"
+            ],
+            "result": {
+              "duration": 5292190,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "response includes the following",
+            "match": {
+              "location": "restApis.response_equals(String,String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "id",
+                  "2"
+                ],
+                "line": 12
+              },
+              {
+                "cells": [
+                  "first_name",
+                  "Janet"
+                ],
+                "line": 13
+              }
+            ],
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "How to test Rest Apis",
+    "description": "I want to use this template for my feature file to test Rest Apis",
+    "id": "how-to-test-rest-apis",
+    "keyword": "Feature",
+    "uri": "target/parallel/features/apiTest_scenario002_run001_IT.feature",
+    "tags": [
+      {
+        "line": 3,
+        "name": "@reqire"
+      }
+    ]
+  }
+]

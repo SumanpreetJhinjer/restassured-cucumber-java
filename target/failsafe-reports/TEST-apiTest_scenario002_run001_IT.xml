@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-failsafe-plugin/xsd/failsafe-test-report.xsd" name="restApis_scenario002_run001_IT" time="0.923" tests="6" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-failsafe-plugin/xsd/failsafe-test-report.xsd" name="apiTest_scenario002_run001_IT" time="6.178" tests="4" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -59,10 +59,8 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="53.0"/>
   </properties>
-  <testcase name="Given a book exists with an isbn of 9781451648546" classname="Scenario: User calls web service to get correct book by its ISBN" time="0"/>
-  <testcase name="When a user retrieves the book by isbn" classname="Scenario: User calls web service to get correct book by its ISBN" time="0"/>
-  <testcase name="Then the status code is 200" classname="Scenario: User calls web service to get correct book by its ISBN" time="0"/>
-  <testcase name="And response includes the following" classname="Scenario: User calls web service to get correct book by its ISBN" time="0"/>
-  <testcase name="And response includes the following in any order" classname="Scenario: User calls web service to get correct book by its ISBN" time="0"/>
-  <testcase name="Scenario: User calls web service to get correct book by its ISBN" classname="Scenario: User calls web service to get correct book by its ISBN" time="0"/>
+  <testcase name="Given a user exist in the api with id 2" classname="Scenario: reqire api test user2" time="0"/>
+  <testcase name="Then the status code is 200" classname="Scenario: reqire api test user2" time="0"/>
+  <testcase name="And response includes the following" classname="Scenario: reqire api test user2" time="0"/>
+  <testcase name="Scenario: reqire api test user2" classname="Scenario: reqire api test user2" time="0.001"/>
 </testsuite>

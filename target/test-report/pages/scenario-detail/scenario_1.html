@@ -20,7 +20,7 @@ limitations under the License.    --><!doctype html>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
   <meta name="description" content="Cluecumber Report Plugin [1.0.0] - Scenario Details"> 
   <meta name="author" content="Cluecumber Report Plugin [1.0.0]"> 
-  <title>Scenario Details - 2018/06/30 17:29:39</title>
+  <title>Scenario Details - 2018/07/01 15:28:47</title>
   <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"> 
   <link href="css/cluecumber.css" rel="stylesheet" type="text/css"> 
   <link rel="stylesheet" href="css/dataTables.min.css"> 
@@ -37,13 +37,13 @@ limitations under the License.    --><!doctype html>
      <li class="nav-item"> <a class="nav-link" href="pages/tag-summary.html">All Tags</a> </li> 
      <li class="nav-item"> <a class="nav-link" href="index.html">All Scenarios</a> </li> 
     </ul> 
-    <span class="text-light">2018/06/30 17:29:39</span> 
+    <span class="text-light">2018/07/01 15:28:47</span> 
    </div> 
   </nav> 
   <main role="main" class="container"> 
    <div class="cluecumber-template"> 
     <div class="pb-2 mt-4 mb-2 border-bottom"> 
-     <h3>Scenario 'User calls web service to get correct book by its ISBN'</h3> 
+     <h3>Scenario 'reqire api test user2'</h3> 
     </div> 
     <script>
         function resizeIframe(obj) {
@@ -70,11 +70,11 @@ limitations under the License.    --><!doctype html>
        </div> 
        <div class="card-body"> 
         <ul class="list-group list-group-flush"> 
-         <li class="list-group-item"><strong>5</strong> Steps</li> 
-         <li class="list-group-item"><strong>5</strong> passed</li> 
+         <li class="list-group-item"><strong>3</strong> Steps</li> 
+         <li class="list-group-item"><strong>3</strong> passed</li> 
          <li class="list-group-item"><strong>0</strong> failed</li> 
          <li class="list-group-item"><strong>0</strong> skipped</li> 
-         <li class="list-group-item"><strong>Time:</strong> 0m 17s 779ms</li> 
+         <li class="list-group-item"><strong>Time:</strong> 0m 03s 939ms</li> 
         </ul> 
        </div> 
       </div> 
@@ -83,7 +83,7 @@ limitations under the License.    --><!doctype html>
     <div class="col-sm-12"> 
      <div class="card h-100"> 
       <div class="card-header">
-       User calls web service to get correct book by its ISBN
+       reqire api test user2
       </div> 
       <div class="card-body"> 
        <ul class="list-group list-group-flush"> 
@@ -96,11 +96,11 @@ limitations under the License.    --><!doctype html>
             </nobr> </span> 
           </div> 
           <div class="col-7 text-left"> 
-           <i>hook.setupGoogle(Scenario)</i> 
+           <i>hook.setupReqire(Scenario)</i> 
           </div> 
           <div class="col-2 text-left"> 
            <nobr>
-            0m 00s 000ms
+            0m 01s 838ms
            </nobr> 
           </div> 
           <div class="col-2 text-right"> 
@@ -115,11 +115,11 @@ limitations under the License.    --><!doctype html>
            </nobr> 
           </div> 
           <div class="col-7 text-left"> 
-           <span data-toggle="tooltip" title="restApis.a_book_exists_with_isbn(String)"> Given a book exists with an isbn of <strong>9781451648546</strong> </span> 
+           <span data-toggle="tooltip" title="apiTest.a_user_exists_with_id(String)"> Given a user exist in the api with id <strong>2</strong> </span> 
           </div> 
           <div class="col-2 text-left"> 
            <nobr>
-            0m 05s 068ms
+            0m 02s 034ms
            </nobr> 
           </div> 
           <div class="col-2 text-right"> 
@@ -133,112 +133,11 @@ limitations under the License.    --><!doctype html>
            </nobr> 
           </div> 
           <div class="col-7 text-left"> 
-           <span data-toggle="tooltip" title="restApis.a_user_retrieves_the_book_by_isbn()"> When a user retrieves the book by isbn </span> 
-          </div> 
-          <div class="col-2 text-left"> 
-           <nobr>
-            0m 09s 396ms
-           </nobr> 
-          </div> 
-          <div class="col-2 text-right"> 
-           <span class="text-success">passed</span> 
-          </div> 
-         </div> 
-         <div class="row"> 
-          <div class="col-1"></div> 
-          <div class="col-10 text-left"> 
-           <iframe srcdoc="{
-    &quot;kind&quot;: &quot;books#volumes&quot;,
-    &quot;totalItems&quot;: 1,
-    &quot;items&quot;: [
-        {
-            &quot;kind&quot;: &quot;books#volume&quot;,
-            &quot;id&quot;: &quot;8U2oAAAAQBAJ&quot;,
-            &quot;etag&quot;: &quot;RPHTzlw7e4g&quot;,
-            &quot;selfLink&quot;: &quot;https://www.googleapis.com/books/v1/volumes/8U2oAAAAQBAJ&quot;,
-            &quot;volumeInfo&quot;: {
-                &quot;title&quot;: &quot;Steve Jobs&quot;,
-                &quot;authors&quot;: [
-                    &quot;Walter Isaacson&quot;
-                ],
-                &quot;publisher&quot;: &quot;Simon and Schuster&quot;,
-                &quot;publishedDate&quot;: &quot;2011&quot;,
-                &quot;description&quot;: &quot;Draws on more than forty interviews with Steve Jobs, as well as interviews with family members, friends, competitors, and colleagues to offer a look at the co-founder and leading creative force behind the Apple computer company.&quot;,
-                &quot;industryIdentifiers&quot;: [
-                    {
-                        &quot;type&quot;: &quot;ISBN_13&quot;,
-                        &quot;identifier&quot;: &quot;9781451648546&quot;
-                    },
-                    {
-                        &quot;type&quot;: &quot;ISBN_10&quot;,
-                        &quot;identifier&quot;: &quot;1451648545&quot;
-                    }
-                ],
-                &quot;readingModes&quot;: {
-                    &quot;text&quot;: false,
-                    &quot;image&quot;: false
-                },
-                &quot;pageCount&quot;: 630,
-                &quot;printType&quot;: &quot;BOOK&quot;,
-                &quot;categories&quot;: [
-                    &quot;Biography &amp; Autobiography&quot;
-                ],
-                &quot;averageRating&quot;: 4.0,
-                &quot;ratingsCount&quot;: 3906,
-                &quot;maturityRating&quot;: &quot;NOT_MATURE&quot;,
-                &quot;allowAnonLogging&quot;: false,
-                &quot;contentVersion&quot;: &quot;0.3.0.0.preview.0&quot;,
-                &quot;imageLinks&quot;: {
-                    &quot;smallThumbnail&quot;: &quot;http://books.google.com/books/content?id=8U2oAAAAQBAJ&amp;printsec=frontcover&amp;img=1&amp;zoom=5&amp;edge=curl&amp;source=gbs_api&quot;,
-                    &quot;thumbnail&quot;: &quot;http://books.google.com/books/content?id=8U2oAAAAQBAJ&amp;printsec=frontcover&amp;img=1&amp;zoom=1&amp;edge=curl&amp;source=gbs_api&quot;
-                },
-                &quot;language&quot;: &quot;en&quot;,
-                &quot;previewLink&quot;: &quot;http://books.google.com.au/books?id=8U2oAAAAQBAJ&amp;printsec=frontcover&amp;dq=isbn:9781451648546&amp;hl=&amp;cd=1&amp;source=gbs_api&quot;,
-                &quot;infoLink&quot;: &quot;http://books.google.com.au/books?id=8U2oAAAAQBAJ&amp;dq=isbn:9781451648546&amp;hl=&amp;source=gbs_api&quot;,
-                &quot;canonicalVolumeLink&quot;: &quot;https://books.google.com/books/about/Steve_Jobs.html?hl=&amp;id=8U2oAAAAQBAJ&quot;
-            },
-            &quot;saleInfo&quot;: {
-                &quot;country&quot;: &quot;AU&quot;,
-                &quot;saleability&quot;: &quot;NOT_FOR_SALE&quot;,
-                &quot;isEbook&quot;: false
-            },
-            &quot;accessInfo&quot;: {
-                &quot;country&quot;: &quot;AU&quot;,
-                &quot;viewability&quot;: &quot;PARTIAL&quot;,
-                &quot;embeddable&quot;: true,
-                &quot;publicDomain&quot;: false,
-                &quot;textToSpeechPermission&quot;: &quot;ALLOWED_FOR_ACCESSIBILITY&quot;,
-                &quot;epub&quot;: {
-                    &quot;isAvailable&quot;: false
-                },
-                &quot;pdf&quot;: {
-                    &quot;isAvailable&quot;: false
-                },
-                &quot;webReaderLink&quot;: &quot;http://play.google.com/books/reader?id=8U2oAAAAQBAJ&amp;hl=&amp;printsec=frontcover&amp;source=gbs_api&quot;,
-                &quot;accessViewStatus&quot;: &quot;SAMPLE&quot;,
-                &quot;quoteSharingAllowed&quot;: false
-            },
-            &quot;searchInfo&quot;: {
-                &quot;textSnippet&quot;: &quot;Draws on more than forty interviews with Steve Jobs, as well as interviews with family members, friends, competitors, and colleagues to offer a look at the co-founder and leading creative force behind the Apple computer company.&quot;
-            }
-        }
-    ]
-}" width="100%" height="1" scrolling="yes" onload="resizeIframe(this);"></iframe> 
-          </div> 
-          <div class="col-1"></div> 
-         </div> 
-         <div class="row"> 
-          <div class="col-1 text-left"> 
-           <nobr>
-            Step 3
-           </nobr> 
-          </div> 
-          <div class="col-7 text-left"> 
            <span data-toggle="tooltip" title="restApis.verify_status_code(int)"> Then the status code is <strong>200</strong> </span> 
           </div> 
           <div class="col-2 text-left"> 
            <nobr>
-            0m 00s 478ms
+            0m 00s 061ms
            </nobr> 
           </div> 
           <div class="col-2 text-right"> 
@@ -255,7 +154,7 @@ limitations under the License.    --><!doctype html>
          <div class="row"> 
           <div class="col-1 text-left"> 
            <nobr>
-            Step 4
+            Step 3
            </nobr> 
           </div> 
           <div class="col-7 text-left"> 
@@ -263,19 +162,19 @@ limitations under the License.    --><!doctype html>
            <table class="table table-hover table-sm compact"> 
             <tbody>
              <tr> 
-              <td>totalItems</td> 
-              <td>1</td> 
+              <td>id</td> 
+              <td>2</td> 
              </tr> 
              <tr> 
-              <td>kind</td> 
-              <td>books#volumes</td> 
+              <td>first_name</td> 
+              <td>Janet</td> 
              </tr> 
             </tbody>
            </table> 
           </div> 
           <div class="col-2 text-left"> 
            <nobr>
-            0m 02s 160ms
+            0m 00s 005ms
            </nobr> 
           </div> 
           <div class="col-2 text-right"> 
@@ -283,38 +182,32 @@ limitations under the License.    --><!doctype html>
           </div> 
          </div> 
          <div class="row"> 
-          <div class="col-1 text-left"> 
-           <nobr>
-            Step 5
-           </nobr> 
+          <div class="col-1"></div> 
+          <div class="col-10 text-left"> 
+           <iframe srcdoc="Expected body content: id Actual body content: true" width="100%" height="1" scrolling="yes" onload="resizeIframe(this);"></iframe> 
           </div> 
-          <div class="col-7 text-left"> 
-           <span data-toggle="tooltip" title="restApis.response_contains_in_any_order(String,String>)"> And response includes the following in any order </span> 
-           <table class="table table-hover table-sm compact"> 
-            <tbody>
-             <tr> 
-              <td>items.volumeInfo.title</td> 
-              <td>Steve Jobs</td> 
-             </tr> 
-             <tr> 
-              <td>items.volumeInfo.publisher</td> 
-              <td>Simon and Schuster</td> 
-             </tr> 
-             <tr> 
-              <td>items.volumeInfo.pageCount</td> 
-              <td>630</td> 
-             </tr> 
-            </tbody>
-           </table> 
+          <div class="col-1"></div> 
+         </div> 
+         <div class="row"> 
+          <div class="col-1"></div> 
+          <div class="col-10 text-left"> 
+           <iframe srcdoc="Expected body content: 2 Actual body content: true" width="100%" height="1" scrolling="yes" onload="resizeIframe(this);"></iframe> 
           </div> 
-          <div class="col-2 text-left"> 
-           <nobr>
-            0m 00s 673ms
-           </nobr> 
+          <div class="col-1"></div> 
+         </div> 
+         <div class="row"> 
+          <div class="col-1"></div> 
+          <div class="col-10 text-left"> 
+           <iframe srcdoc="Expected body content: first_name Actual body content: true" width="100%" height="1" scrolling="yes" onload="resizeIframe(this);"></iframe> 
           </div> 
-          <div class="col-2 text-right"> 
-           <span class="text-success">passed</span> 
+          <div class="col-1"></div> 
+         </div> 
+         <div class="row"> 
+          <div class="col-1"></div> 
+          <div class="col-10 text-left"> 
+           <iframe srcdoc="Expected body content: Janet Actual body content: true" width="100%" height="1" scrolling="yes" onload="resizeIframe(this);"></iframe> 
           </div> 
+          <div class="col-1"></div> 
          </div> </li> 
         <li class="list-group-item" style="opacity:.8"> 
          <div class="row"> 
@@ -344,7 +237,7 @@ limitations under the License.    --><!doctype html>
   </main> 
   <footer class="footer navbar-dark bg-dark"> 
    <div class="container-fluid"> 
-    <span class="text-muted">Generated by Cluecumber Report Plugin [1.0.0], 2018/06/30 17:29:39.</span> 
+    <span class="text-muted">Generated by Cluecumber Report Plugin [1.0.0], 2018/07/01 15:28:47.</span> 
    </div> 
   </footer>
   <script src="js/jquery.min.js"></script> 
@@ -374,10 +267,10 @@ limitations under the License.    --><!doctype html>
                     var ctx = document.getElementById('chart-area').getContext("2d");
             new Chart(ctx, eval({
   "data" : {
-    "labels" : [ "Step 1", "Step 2", "Step 3", "Step 4", "Step 5" ],
+    "labels" : [ "Step 1", "Step 2", "Step 3" ],
     "datasets" : [ {
-      "data" : [ 5068.0, 9396.0, 478.0, 2160.0, 673.0 ],
-      "backgroundColor" : [ "rgba(40,167,69,1.000)", "rgba(40,167,69,1.000)", "rgba(40,167,69,1.000)", "rgba(40,167,69,1.000)", "rgba(40,167,69,1.000)" ],
+      "data" : [ 2034.0, 61.0, 5.0 ],
+      "backgroundColor" : [ "rgba(40,167,69,1.000)", "rgba(40,167,69,1.000)", "rgba(40,167,69,1.000)" ],
       "label" : "Step runtime"
     } ]
   },

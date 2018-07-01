@@ -12,7 +12,7 @@
         "before": [
           {
             "result": {
-              "duration": 224378,
+              "duration": 2483800,
               "status": "passed"
             },
             "match": {
@@ -27,7 +27,7 @@
         "after": [
           {
             "result": {
-              "duration": 156429,
+              "duration": 52306,
               "status": "passed"
             },
             "match": {
@@ -40,7 +40,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4347017779,
+              "duration": 790456460,
               "status": "passed"
             },
             "line": 9,
@@ -57,11 +57,8 @@
             "keyword": "Given "
           },
           {
-            "output": [
-              "{\n    \"kind\": \"books#volumes\",\n    \"totalItems\": 1,\n    \"items\": [\n        {\n            \"kind\": \"books#volume\",\n            \"id\": \"8U2oAAAAQBAJ\",\n            \"etag\": \"RPHTzlw7e4g\",\n            \"selfLink\": \"https://www.googleapis.com/books/v1/volumes/8U2oAAAAQBAJ\",\n            \"volumeInfo\": {\n                \"title\": \"Steve Jobs\",\n                \"authors\": [\n                    \"Walter Isaacson\"\n                ],\n                \"publisher\": \"Simon and Schuster\",\n                \"publishedDate\": \"2011\",\n                \"description\": \"Draws on more than forty interviews with Steve Jobs, as well as interviews with family members, friends, competitors, and colleagues to offer a look at the co-founder and leading creative force behind the Apple computer company.\",\n                \"industryIdentifiers\": [\n                    {\n                        \"type\": \"ISBN_13\",\n                        \"identifier\": \"9781451648546\"\n                    },\n                    {\n                        \"type\": \"ISBN_10\",\n                        \"identifier\": \"1451648545\"\n                    }\n                ],\n                \"readingModes\": {\n                    \"text\": false,\n                    \"image\": false\n                },\n                \"pageCount\": 630,\n                \"printType\": \"BOOK\",\n                \"categories\": [\n                    \"Biography \u0026 Autobiography\"\n                ],\n                \"averageRating\": 4.0,\n                \"ratingsCount\": 3906,\n                \"maturityRating\": \"NOT_MATURE\",\n                \"allowAnonLogging\": false,\n                \"contentVersion\": \"0.3.0.0.preview.0\",\n                \"imageLinks\": {\n                    \"smallThumbnail\": \"http://books.google.com/books/content?id\u003d8U2oAAAAQBAJ\u0026printsec\u003dfrontcover\u0026img\u003d1\u0026zoom\u003d5\u0026edge\u003dcurl\u0026source\u003dgbs_api\",\n                    \"thumbnail\": \"http://books.google.com/books/content?id\u003d8U2oAAAAQBAJ\u0026printsec\u003dfrontcover\u0026img\u003d1\u0026zoom\u003d1\u0026edge\u003dcurl\u0026source\u003dgbs_api\"\n                },\n                \"language\": \"en\",\n                \"previewLink\": \"http://books.google.com.au/books?id\u003d8U2oAAAAQBAJ\u0026printsec\u003dfrontcover\u0026dq\u003disbn:9781451648546\u0026hl\u003d\u0026cd\u003d1\u0026source\u003dgbs_api\",\n                \"infoLink\": \"http://books.google.com.au/books?id\u003d8U2oAAAAQBAJ\u0026dq\u003disbn:9781451648546\u0026hl\u003d\u0026source\u003dgbs_api\",\n                \"canonicalVolumeLink\": \"https://books.google.com/books/about/Steve_Jobs.html?hl\u003d\u0026id\u003d8U2oAAAAQBAJ\"\n            },\n            \"saleInfo\": {\n                \"country\": \"AU\",\n                \"saleability\": \"NOT_FOR_SALE\",\n                \"isEbook\": false\n            },\n            \"accessInfo\": {\n                \"country\": \"AU\",\n                \"viewability\": \"PARTIAL\",\n                \"embeddable\": true,\n                \"publicDomain\": false,\n                \"textToSpeechPermission\": \"ALLOWED_FOR_ACCESSIBILITY\",\n                \"epub\": {\n                    \"isAvailable\": false\n                },\n                \"pdf\": {\n                    \"isAvailable\": false\n                },\n                \"webReaderLink\": \"http://play.google.com/books/reader?id\u003d8U2oAAAAQBAJ\u0026hl\u003d\u0026printsec\u003dfrontcover\u0026source\u003dgbs_api\",\n                \"accessViewStatus\": \"SAMPLE\",\n                \"quoteSharingAllowed\": false\n            },\n            \"searchInfo\": {\n                \"textSnippet\": \"Draws on more than forty interviews with Steve Jobs, as well as interviews with family members, friends, competitors, and colleagues to offer a look at the co-founder and leading creative force behind the Apple computer company.\"\n            }\n        }\n    ]\n}"
-            ],
             "result": {
-              "duration": 9617967537,
+              "duration": 78704,
               "status": "passed"
             },
             "line": 10,
@@ -76,7 +73,7 @@
               "Expected Status Code: 200 Actual status code: 200"
             ],
             "result": {
-              "duration": 170344379,
+              "duration": 447778,
               "status": "passed"
             },
             "line": 11,
@@ -93,8 +90,14 @@
             "keyword": "Then "
           },
           {
+            "output": [
+              "Expected body content: totalItems Actual body content: true",
+              "Expected body content: 1 Actual body content: true",
+              "Expected body content: kind Actual body content: true",
+              "Expected body content: books#volumes Actual body content: true"
+            ],
             "result": {
-              "duration": 3224001005,
+              "duration": 1313027,
               "status": "passed"
             },
             "line": 12,
@@ -121,8 +124,13 @@
             "keyword": "And "
           },
           {
+            "output": [
+              "Expected body content: Steve Jobs Actual body content: true",
+              "Expected body content: Simon and Schuster Actual body content: true",
+              "Expected body content: 630 Actual body content: true"
+            ],
             "result": {
-              "duration": 143232293,
+              "duration": 662868,
               "status": "passed"
             },
             "line": 15,
