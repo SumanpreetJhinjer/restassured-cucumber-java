@@ -1,5 +1,7 @@
 package stepDefs;
 
+import java.util.Map;
+
 import cucumber.api.Scenario;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -24,6 +26,18 @@ public class apiTest {
 		validatedResponse = executor.get("/users/"+id);
 		
 		response = validatedResponse.getResponse();		
+		return hook.validatedResponse=validatedResponse;
+	}
+	
+	@Given("^i create following user$")
+	public RestValidator userCreation(Map<String,String> responseFields) {
+		String body = responseFields.entrySet().toString();
+		body = body.substring(1,body.length()-1);
+		body = body.replaceAll("=", ": ");
+		System.out.println("{"+body+"}");
+		
+		validatedResponse= executor.post("/users/", "{"+body+"}", "application/json");
+		
 		return hook.validatedResponse=validatedResponse;
 	}
 

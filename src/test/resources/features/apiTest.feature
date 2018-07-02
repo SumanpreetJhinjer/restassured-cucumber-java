@@ -15,3 +15,12 @@ Feature: How to test Rest Apis
     And response includes the following
       | id         |     2 |
       | first_name | Janet |
+
+  Scenario: reqire api test user2
+    Given i create following user
+      | "name" | "sumanpreet"   |
+      | "job"  | "Test Analyst" |
+    Then the status code is 201
+    And response includes the following
+      | name | sumanpreet   |
+      | job  | Test Analyst |
