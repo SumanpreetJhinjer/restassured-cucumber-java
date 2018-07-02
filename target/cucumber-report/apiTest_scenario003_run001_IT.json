@@ -12,7 +12,7 @@
         "before": [
           {
             "result": {
-              "duration": 3818969074,
+              "duration": 4454173136,
               "status": "passed"
             },
             "match": {
@@ -23,11 +23,11 @@
         "line": 7,
         "name": "reqire api test to create new user",
         "description": "",
-        "id": "how-to-test-rest-apis;reqire-api-test-to-create-new-user",
+        "id": "how-to-test-rest-apis-reqire;reqire-api-test-to-create-new-user",
         "after": [
           {
             "result": {
-              "duration": 121232,
+              "duration": 197492,
               "status": "passed"
             },
             "match": {
@@ -40,7 +40,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3381991889,
+              "duration": 6958975996,
               "status": "passed"
             },
             "line": 9,
@@ -71,7 +71,7 @@
               "Expected Status Code: 201 Actual status code: 201"
             ],
             "result": {
-              "duration": 32775795,
+              "duration": 5551764,
               "status": "passed"
             },
             "line": 12,
@@ -95,7 +95,7 @@
               "Expected body content: Test Analyst Actual body content: true"
             ],
             "result": {
-              "duration": 1331114,
+              "duration": 1410795,
               "status": "passed"
             },
             "line": 13,
@@ -124,9 +124,9 @@
         ]
       }
     ],
-    "name": "How to test Rest Apis",
+    "name": "How to test Rest Apis reqire",
     "description": "I want to use this template for my feature file to test Rest Apis",
-    "id": "how-to-test-rest-apis",
+    "id": "how-to-test-rest-apis-reqire",
     "keyword": "Feature",
     "uri": "target/parallel/features/apiTest_scenario003_run001_IT.feature",
     "tags": [

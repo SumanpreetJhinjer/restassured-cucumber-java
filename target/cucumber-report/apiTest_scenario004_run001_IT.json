@@ -12,7 +12,7 @@
         "before": [
           {
             "result": {
-              "duration": 3976160704,
+              "duration": 4847461646,
               "status": "passed"
             },
             "match": {
@@ -23,11 +23,11 @@
         "line": 7,
         "name": "delete user",
         "description": "",
-        "id": "how-to-test-rest-apis;delete-user",
+        "id": "how-to-test-rest-apis-reqire;delete-user",
         "after": [
           {
             "result": {
-              "duration": 140787,
+              "duration": 155451,
               "status": "passed"
             },
             "match": {
@@ -40,15 +40,15 @@
         "steps": [
           {
             "result": {
-              "duration": 3214783424,
+              "duration": 6823707408,
               "status": "passed"
             },
             "line": 9,
-            "name": "i delete a user with id 4",
+            "name": "i delete a user with id 265",
             "match": {
               "arguments": [
                 {
-                  "val": "4",
+                  "val": "265",
                   "offset": 24
                 }
               ],
@@ -61,7 +61,7 @@
               "Expected Status Code: 204 Actual status code: 204"
             ],
             "result": {
-              "duration": 9213671,
+              "duration": 7239242,
               "status": "passed"
             },
             "line": 10,
@@ -80,9 +80,9 @@
         ]
       }
     ],
-    "name": "How to test Rest Apis",
+    "name": "How to test Rest Apis reqire",
     "description": "I want to use this template for my feature file to test Rest Apis",
-    "id": "how-to-test-rest-apis",
+    "id": "how-to-test-rest-apis-reqire",
     "keyword": "Feature",
     "uri": "target/parallel/features/apiTest_scenario004_run001_IT.feature",
     "tags": [
