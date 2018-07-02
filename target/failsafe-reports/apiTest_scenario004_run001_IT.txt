@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
-Test set: apiTest_scenario001_run001_IT
+Test set: apiTest_scenario004_run001_IT
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 12.978 s - in apiTest_scenario001_run001_IT
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.913 s - in apiTest_scenario004_run001_IT

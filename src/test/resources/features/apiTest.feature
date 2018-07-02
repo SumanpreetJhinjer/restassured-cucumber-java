@@ -26,5 +26,6 @@ Feature: How to test Rest Apis
       | job  | Test Analyst |
 
   Scenario: delete user
-    Given i delete a user with id 4
+    Given i delete a user with id 265
     Then the status code is 204
+    

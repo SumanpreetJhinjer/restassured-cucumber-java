@@ -3,6 +3,7 @@ restApis_scenario001_run001_IT.class
 stepDefs\apiTest.class
 runner\local.class
 apiTest_scenario001_run001_IT.class
+apiTest_scenario004_run001_IT.class
 utility\RestValidator.class
 stepDefs\restApis.class
 utility\RestExecutor.class

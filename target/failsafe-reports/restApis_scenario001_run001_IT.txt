@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: restApis_scenario001_run001_IT
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.713 s - in restApis_scenario001_run001_IT
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.517 s - in restApis_scenario001_run001_IT

@@ -12,7 +12,7 @@
         "before": [
           {
             "result": {
-              "duration": 12999742,
+              "duration": 3818969074,
               "status": "passed"
             },
             "match": {
@@ -21,13 +21,13 @@
           }
         ],
         "line": 7,
-        "name": "reqire api test user2",
+        "name": "reqire api test to create new user",
         "description": "",
-        "id": "how-to-test-rest-apis;reqire-api-test-user2",
+        "id": "how-to-test-rest-apis;reqire-api-test-to-create-new-user",
         "after": [
           {
             "result": {
-              "duration": 49373,
+              "duration": 121232,
               "status": "passed"
             },
             "match": {
@@ -40,7 +40,7 @@
         "steps": [
           {
             "result": {
-              "duration": 561040566,
+              "duration": 3381991889,
               "status": "passed"
             },
             "line": 9,
@@ -71,7 +71,7 @@
               "Expected Status Code: 201 Actual status code: 201"
             ],
             "result": {
-              "duration": 436535,
+              "duration": 32775795,
               "status": "passed"
             },
             "line": 12,
@@ -95,7 +95,7 @@
               "Expected body content: Test Analyst Actual body content: true"
             ],
             "result": {
-              "duration": 361253,
+              "duration": 1331114,
               "status": "passed"
             },
             "line": 13,

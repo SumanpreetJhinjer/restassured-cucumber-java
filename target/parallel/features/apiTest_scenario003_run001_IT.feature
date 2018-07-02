@@ -4,7 +4,7 @@
 Feature: How to test Rest Apis
   I want to use this template for my feature file to test Rest Apis
 
-Scenario: reqire api test user2
+Scenario: reqire api test to create new user
 
 Given i create following user
 |"name"|"sumanpreet"|

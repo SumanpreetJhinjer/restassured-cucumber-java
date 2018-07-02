@@ -12,7 +12,7 @@
         "before": [
           {
             "result": {
-              "duration": 1833838632,
+              "duration": 4037428091,
               "status": "passed"
             },
             "match": {
@@ -27,7 +27,7 @@
         "after": [
           {
             "result": {
-              "duration": 155940,
+              "duration": 171094,
               "status": "passed"
             },
             "match": {
@@ -40,7 +40,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2077732033,
+              "duration": 3240542398,
               "status": "passed"
             },
             "line": 9,
@@ -61,7 +61,7 @@
               "Expected Status Code: 200 Actual status code: 200"
             ],
             "result": {
-              "duration": 5706238,
+              "duration": 73717673,
               "status": "passed"
             },
             "line": 10,
@@ -85,7 +85,7 @@
               "Expected body content: Janet Actual body content: true"
             ],
             "result": {
-              "duration": 4172256,
+              "duration": 3768962,
               "status": "passed"
             },
             "line": 11,

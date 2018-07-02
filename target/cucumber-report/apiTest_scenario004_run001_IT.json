@@ -1,0 +1,95 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "# language: en"
+      }
+    ],
+    "line": 4,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3976160704,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hook.setupReqire(Scenario)"
+            }
+          }
+        ],
+        "line": 7,
+        "name": "delete user",
+        "description": "",
+        "id": "how-to-test-rest-apis;delete-user",
+        "after": [
+          {
+            "result": {
+              "duration": 140787,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hook.closer(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3214783424,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "i delete a user with id 4",
+            "match": {
+              "arguments": [
+                {
+                  "val": "4",
+                  "offset": 24
+                }
+              ],
+              "location": "apiTest.deleteUser(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "output": [
+              "Expected Status Code: 204 Actual status code: 204"
+            ],
+            "result": {
+              "duration": 9213671,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the status code is 204",
+            "match": {
+              "arguments": [
+                {
+                  "val": "204",
+                  "offset": 19
+                }
+              ],
+              "location": "restApis.verify_status_code(int)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "How to test Rest Apis",
+    "description": "I want to use this template for my feature file to test Rest Apis",
+    "id": "how-to-test-rest-apis",
+    "keyword": "Feature",
+    "uri": "target/parallel/features/apiTest_scenario004_run001_IT.feature",
+    "tags": [
+      {
+        "line": 3,
+        "name": "@reqire"
+      }
+    ]
+  }
+]
