@@ -20,7 +20,7 @@ limitations under the License.    --><!doctype html>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
   <meta name="description" content="Cluecumber Report Plugin [1.0.0] - Scenario Details"> 
   <meta name="author" content="Cluecumber Report Plugin [1.0.0]"> 
-  <title>Scenario Details - 2018/07/02 05:45:38</title>
+  <title>Scenario Details - 2018/07/02 05:45:39</title>
   <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"> 
   <link href="css/cluecumber.css" rel="stylesheet" type="text/css"> 
   <link rel="stylesheet" href="css/dataTables.min.css"> 
@@ -37,13 +37,13 @@ limitations under the License.    --><!doctype html>
      <li class="nav-item"> <a class="nav-link" href="pages/tag-summary.html">All Tags</a> </li> 
      <li class="nav-item"> <a class="nav-link" href="index.html">All Scenarios</a> </li> 
     </ul> 
-    <span class="text-light">2018/07/02 05:45:38</span> 
+    <span class="text-light">2018/07/02 05:45:39</span> 
    </div> 
   </nav> 
   <main role="main" class="container"> 
    <div class="cluecumber-template"> 
     <div class="pb-2 mt-4 mb-2 border-bottom"> 
-     <h3>Scenario 'reqire api test user2'</h3> 
+     <h3>Scenario 'User calls web service to get correct book by its ISBN'</h3> 
     </div> 
     <script>
         function resizeIframe(obj) {
@@ -70,11 +70,11 @@ limitations under the License.    --><!doctype html>
        </div> 
        <div class="card-body"> 
         <ul class="list-group list-group-flush"> 
-         <li class="list-group-item"><strong>3</strong> Steps</li> 
-         <li class="list-group-item"><strong>3</strong> passed</li> 
+         <li class="list-group-item"><strong>5</strong> Steps</li> 
+         <li class="list-group-item"><strong>5</strong> passed</li> 
          <li class="list-group-item"><strong>0</strong> failed</li> 
          <li class="list-group-item"><strong>0</strong> skipped</li> 
-         <li class="list-group-item"><strong>Time:</strong> 0m 00s 574ms</li> 
+         <li class="list-group-item"><strong>Time:</strong> 0m 01s 290ms</li> 
         </ul> 
        </div> 
       </div> 
@@ -83,7 +83,7 @@ limitations under the License.    --><!doctype html>
     <div class="col-sm-12"> 
      <div class="card h-100"> 
       <div class="card-header">
-       reqire api test user2
+       User calls web service to get correct book by its ISBN
       </div> 
       <div class="card-body"> 
        <ul class="list-group list-group-flush"> 
@@ -96,11 +96,11 @@ limitations under the License.    --><!doctype html>
             </nobr> </span> 
           </div> 
           <div class="col-7 text-left"> 
-           <i>hook.setupReqire(Scenario)</i> 
+           <i>hook.setupGoogle(Scenario)</i> 
           </div> 
           <div class="col-2 text-left"> 
            <nobr>
-            0m 00s 012ms
+            0m 00s 004ms
            </nobr> 
           </div> 
           <div class="col-2 text-right"> 
@@ -115,23 +115,11 @@ limitations under the License.    --><!doctype html>
            </nobr> 
           </div> 
           <div class="col-7 text-left"> 
-           <span data-toggle="tooltip" title="apiTest.userCreation(String,String>)"> Given i create following user </span> 
-           <table class="table table-hover table-sm compact"> 
-            <tbody>
-             <tr> 
-              <td>"name"</td> 
-              <td>"sumanpreet"</td> 
-             </tr> 
-             <tr> 
-              <td>"job"</td> 
-              <td>"Test Analyst"</td> 
-             </tr> 
-            </tbody>
-           </table> 
+           <span data-toggle="tooltip" title="restApis.a_book_exists_with_isbn(String)"> Given a book exists with an isbn of <strong>9781451648546</strong> </span> 
           </div> 
           <div class="col-2 text-left"> 
            <nobr>
-            0m 00s 561ms
+            0m 01s 281ms
            </nobr> 
           </div> 
           <div class="col-2 text-right"> 
@@ -145,7 +133,7 @@ limitations under the License.    --><!doctype html>
            </nobr> 
           </div> 
           <div class="col-7 text-left"> 
-           <span data-toggle="tooltip" title="restApis.verify_status_code(int)"> Then the status code is <strong>201</strong> </span> 
+           <span data-toggle="tooltip" title="restApis.a_user_retrieves_the_book_by_isbn()"> When a user retrieves the book by isbn </span> 
           </div> 
           <div class="col-2 text-left"> 
            <nobr>
@@ -157,16 +145,34 @@ limitations under the License.    --><!doctype html>
           </div> 
          </div> 
          <div class="row"> 
+          <div class="col-1 text-left"> 
+           <nobr>
+            Step 3
+           </nobr> 
+          </div> 
+          <div class="col-7 text-left"> 
+           <span data-toggle="tooltip" title="restApis.verify_status_code(int)"> Then the status code is <strong>200</strong> </span> 
+          </div> 
+          <div class="col-2 text-left"> 
+           <nobr>
+            0m 00s 001ms
+           </nobr> 
+          </div> 
+          <div class="col-2 text-right"> 
+           <span class="text-success">passed</span> 
+          </div> 
+         </div> 
+         <div class="row"> 
           <div class="col-1"></div> 
           <div class="col-10 text-left"> 
-           <iframe srcdoc="Expected Status Code: 201 Actual status code: 201" width="100%" height="1" scrolling="yes" onload="resizeIframe(this);"></iframe> 
+           <iframe srcdoc="Expected Status Code: 200 Actual status code: 200" width="100%" height="1" scrolling="yes" onload="resizeIframe(this);"></iframe> 
           </div> 
           <div class="col-1"></div> 
          </div> 
          <div class="row"> 
           <div class="col-1 text-left"> 
            <nobr>
-            Step 3
+            Step 4
            </nobr> 
           </div> 
           <div class="col-7 text-left"> 
@@ -174,12 +180,12 @@ limitations under the License.    --><!doctype html>
            <table class="table table-hover table-sm compact"> 
             <tbody>
              <tr> 
-              <td>name</td> 
-              <td>sumanpreet</td> 
+              <td>totalItems</td> 
+              <td>1</td> 
              </tr> 
              <tr> 
-              <td>job</td> 
-              <td>Test Analyst</td> 
+              <td>kind</td> 
+              <td>books#volumes</td> 
              </tr> 
             </tbody>
            </table> 
@@ -196,28 +202,83 @@ limitations under the License.    --><!doctype html>
          <div class="row"> 
           <div class="col-1"></div> 
           <div class="col-10 text-left"> 
-           <iframe srcdoc="Expected body content: name Actual body content: true" width="100%" height="1" scrolling="yes" onload="resizeIframe(this);"></iframe> 
+           <iframe srcdoc="Expected body content: totalItems Actual body content: true" width="100%" height="1" scrolling="yes" onload="resizeIframe(this);"></iframe> 
           </div> 
           <div class="col-1"></div> 
          </div> 
          <div class="row"> 
           <div class="col-1"></div> 
           <div class="col-10 text-left"> 
-           <iframe srcdoc="Expected body content: sumanpreet Actual body content: true" width="100%" height="1" scrolling="yes" onload="resizeIframe(this);"></iframe> 
+           <iframe srcdoc="Expected body content: 1 Actual body content: true" width="100%" height="1" scrolling="yes" onload="resizeIframe(this);"></iframe> 
           </div> 
           <div class="col-1"></div> 
          </div> 
          <div class="row"> 
           <div class="col-1"></div> 
           <div class="col-10 text-left"> 
-           <iframe srcdoc="Expected body content: job Actual body content: true" width="100%" height="1" scrolling="yes" onload="resizeIframe(this);"></iframe> 
+           <iframe srcdoc="Expected body content: kind Actual body content: true" width="100%" height="1" scrolling="yes" onload="resizeIframe(this);"></iframe> 
           </div> 
           <div class="col-1"></div> 
          </div> 
          <div class="row"> 
           <div class="col-1"></div> 
           <div class="col-10 text-left"> 
-           <iframe srcdoc="Expected body content: Test Analyst Actual body content: true" width="100%" height="1" scrolling="yes" onload="resizeIframe(this);"></iframe> 
+           <iframe srcdoc="Expected body content: books#volumes Actual body content: true" width="100%" height="1" scrolling="yes" onload="resizeIframe(this);"></iframe> 
+          </div> 
+          <div class="col-1"></div> 
+         </div> 
+         <div class="row"> 
+          <div class="col-1 text-left"> 
+           <nobr>
+            Step 5
+           </nobr> 
+          </div> 
+          <div class="col-7 text-left"> 
+           <span data-toggle="tooltip" title="restApis.response_contains_in_any_order(String,String>)"> And response includes the following in any order </span> 
+           <table class="table table-hover table-sm compact"> 
+            <tbody>
+             <tr> 
+              <td>items.volumeInfo.title</td> 
+              <td>Steve Jobs</td> 
+             </tr> 
+             <tr> 
+              <td>items.volumeInfo.publisher</td> 
+              <td>Simon and Schuster</td> 
+             </tr> 
+             <tr> 
+              <td>items.volumeInfo.pageCount</td> 
+              <td>630</td> 
+             </tr> 
+            </tbody>
+           </table> 
+          </div> 
+          <div class="col-2 text-left"> 
+           <nobr>
+            0m 00s 002ms
+           </nobr> 
+          </div> 
+          <div class="col-2 text-right"> 
+           <span class="text-success">passed</span> 
+          </div> 
+         </div> 
+         <div class="row"> 
+          <div class="col-1"></div> 
+          <div class="col-10 text-left"> 
+           <iframe srcdoc="Expected body content: Steve Jobs Actual body content: true" width="100%" height="1" scrolling="yes" onload="resizeIframe(this);"></iframe> 
+          </div> 
+          <div class="col-1"></div> 
+         </div> 
+         <div class="row"> 
+          <div class="col-1"></div> 
+          <div class="col-10 text-left"> 
+           <iframe srcdoc="Expected body content: Simon and Schuster Actual body content: true" width="100%" height="1" scrolling="yes" onload="resizeIframe(this);"></iframe> 
+          </div> 
+          <div class="col-1"></div> 
+         </div> 
+         <div class="row"> 
+          <div class="col-1"></div> 
+          <div class="col-10 text-left"> 
+           <iframe srcdoc="Expected body content: 630 Actual body content: true" width="100%" height="1" scrolling="yes" onload="resizeIframe(this);"></iframe> 
           </div> 
           <div class="col-1"></div> 
          </div> </li> 
@@ -249,7 +310,7 @@ limitations under the License.    --><!doctype html>
   </main> 
   <footer class="footer navbar-dark bg-dark"> 
    <div class="container-fluid"> 
-    <span class="text-muted">Generated by Cluecumber Report Plugin [1.0.0], 2018/07/02 05:45:38.</span> 
+    <span class="text-muted">Generated by Cluecumber Report Plugin [1.0.0], 2018/07/02 05:45:39.</span> 
    </div> 
   </footer>
   <script src="js/jquery.min.js"></script> 
@@ -279,10 +340,10 @@ limitations under the License.    --><!doctype html>
                     var ctx = document.getElementById('chart-area').getContext("2d");
             new Chart(ctx, eval({
   "data" : {
-    "labels" : [ "Step 1", "Step 2", "Step 3" ],
+    "labels" : [ "Step 1", "Step 2", "Step 3", "Step 4", "Step 5" ],
     "datasets" : [ {
-      "data" : [ 561.0, 0.0, 0.0 ],
-      "backgroundColor" : [ "rgba(40,167,69,1.000)", "rgba(40,167,69,1.000)", "rgba(40,167,69,1.000)" ],
+      "data" : [ 1281.0, 0.0, 1.0, 0.0, 2.0 ],
+      "backgroundColor" : [ "rgba(40,167,69,1.000)", "rgba(40,167,69,1.000)", "rgba(40,167,69,1.000)", "rgba(40,167,69,1.000)", "rgba(40,167,69,1.000)" ],
       "label" : "Step runtime"
     } ]
   },

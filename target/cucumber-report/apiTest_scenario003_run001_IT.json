@@ -12,7 +12,7 @@
         "before": [
           {
             "result": {
-              "duration": 1873712393,
+              "duration": 12999742,
               "status": "passed"
             },
             "match": {
@@ -21,13 +21,13 @@
           }
         ],
         "line": 7,
-        "name": "reqire api test user1",
+        "name": "reqire api test user2",
         "description": "",
-        "id": "how-to-test-rest-apis;reqire-api-test-user1",
+        "id": "how-to-test-rest-apis;reqire-api-test-user2",
         "after": [
           {
             "result": {
-              "duration": 143230,
+              "duration": 49373,
               "status": "passed"
             },
             "match": {
@@ -40,36 +40,46 @@
         "steps": [
           {
             "result": {
-              "duration": 2316783956,
+              "duration": 561040566,
               "status": "passed"
             },
             "line": 9,
-            "name": "a user exist in the api with id 1",
+            "name": "i create following user",
             "match": {
-              "arguments": [
-                {
-                  "val": "1",
-                  "offset": 32
-                }
-              ],
-              "location": "apiTest.a_user_exists_with_id(String)"
+              "location": "apiTest.userCreation(String,String\u003e)"
             },
+            "rows": [
+              {
+                "cells": [
+                  "\"name\"",
+                  "\"sumanpreet\""
+                ],
+                "line": 10
+              },
+              {
+                "cells": [
+                  "\"job\"",
+                  "\"Test Analyst\""
+                ],
+                "line": 11
+              }
+            ],
             "keyword": "Given "
           },
           {
             "output": [
-              "Expected Status Code: 200 Actual status code: 200"
+              "Expected Status Code: 201 Actual status code: 201"
             ],
             "result": {
-              "duration": 4044180,
+              "duration": 436535,
               "status": "passed"
             },
-            "line": 10,
-            "name": "the status code is 200",
+            "line": 12,
+            "name": "the status code is 201",
             "match": {
               "arguments": [
                 {
-                  "val": "200",
+                  "val": "201",
                   "offset": 19
                 }
               ],
@@ -79,16 +89,16 @@
           },
           {
             "output": [
-              "Expected body content: id Actual body content: true",
-              "Expected body content: 1 Actual body content: true",
-              "Expected body content: first_name Actual body content: true",
-              "Expected body content: George Actual body content: true"
+              "Expected body content: name Actual body content: true",
+              "Expected body content: sumanpreet Actual body content: true",
+              "Expected body content: job Actual body content: true",
+              "Expected body content: Test Analyst Actual body content: true"
             ],
             "result": {
-              "duration": 4493913,
+              "duration": 361253,
               "status": "passed"
             },
-            "line": 11,
+            "line": 13,
             "name": "response includes the following",
             "match": {
               "location": "restApis.response_equals(String,String\u003e)"
@@ -96,17 +106,17 @@
             "rows": [
               {
                 "cells": [
-                  "id",
-                  "1"
+                  "name",
+                  "sumanpreet"
                 ],
-                "line": 12
+                "line": 14
               },
               {
                 "cells": [
-                  "first_name",
-                  "George"
+                  "job",
+                  "Test Analyst"
                 ],
-                "line": 13
+                "line": 15
               }
             ],
             "keyword": "And "
@@ -118,7 +128,7 @@
     "description": "I want to use this template for my feature file to test Rest Apis",
     "id": "how-to-test-rest-apis",
     "keyword": "Feature",
-    "uri": "target/parallel/features/apiTest_scenario001_run001_IT.feature",
+    "uri": "target/parallel/features/apiTest_scenario003_run001_IT.feature",
     "tags": [
       {
         "line": 3,

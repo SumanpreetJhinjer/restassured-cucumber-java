@@ -16,7 +16,7 @@ Feature: How to test Rest Apis
       | id         |     2 |
       | first_name | Janet |
 
-  Scenario: reqire api test user2
+  Scenario: reqire api test to create new user
     Given i create following user
       | "name" | "sumanpreet"   |
       | "job"  | "Test Analyst" |
@@ -24,3 +24,7 @@ Feature: How to test Rest Apis
     And response includes the following
       | name | sumanpreet   |
       | job  | Test Analyst |
+
+  Scenario: delete user
+    Given i delete a user with id 4
+    Then the status code is 204

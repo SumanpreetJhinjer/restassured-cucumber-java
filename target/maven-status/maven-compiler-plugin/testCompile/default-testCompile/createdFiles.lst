@@ -9,4 +9,5 @@ utility\RestExecutor.class
 runner\cucable.class
 utility\hook.class
 restApis_scenario002_run001_IT.class
+apiTest_scenario003_run001_IT.class
 utility\RestResponse.class

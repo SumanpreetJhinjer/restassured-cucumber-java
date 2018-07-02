@@ -34,13 +34,18 @@ public class apiTest {
 		String body = responseFields.entrySet().toString();
 		body = body.substring(1,body.length()-1);
 		body = body.replaceAll("=", ": ");
-		System.out.println("{"+body+"}");
+		
 		
 		validatedResponse= executor.post("/users/", "{"+body+"}", "application/json");
-		
 		return hook.validatedResponse=validatedResponse;
 	}
 
+	@Given("^i delete a user with id (\\d+)$")
+	public RestValidator deleteUser(String id) {
+		validatedResponse=executor.delete("/users/"+id);
+		
+		return hook.validatedResponse=validatedResponse;
+	}
 
 	
 

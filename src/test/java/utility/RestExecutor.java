@@ -169,11 +169,11 @@ public class RestExecutor {
 				}
 			}
 			HttpResponse response = client.execute(delete);
-			BufferedReader rd = new BufferedReader(new InputStreamReader(response.getEntity().getContent()));
+			/*BufferedReader rd = new BufferedReader(new InputStreamReader(response.getEntity().getContent()));
 			String line = "";
 			while ((line = rd.readLine()) != null) {
 				responseString.append(line);
-			}
+			}*/
 			resResponse.setResponseBody(responseString.toString());
 			resResponse.setResponseCode(response.getStatusLine().getStatusCode());
 			resResponse.setResponseMessage(response.getStatusLine().getReasonPhrase());
