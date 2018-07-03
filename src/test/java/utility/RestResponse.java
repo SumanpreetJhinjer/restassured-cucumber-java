@@ -20,7 +20,7 @@ public class RestResponse {
 	public void setResponseCode(int responseCode) {
 		this.responseCode = responseCode;
 	}
-//comment
+
 	public String getResponseBody() {
 		return responseBody;
 	}
