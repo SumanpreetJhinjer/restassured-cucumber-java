@@ -46,22 +46,24 @@ public class restApis {
 	@And("^response includes the following$")
 	public void response_equals(Map<String,String> responseFields){
 		
-		for (Map.Entry<String, String> field : responseFields.entrySet()) {
+		validatedResponse.expectBodyKeyValue(responseFields);
+		System.out.println(validatedResponse.getResponse().getResponseBody());
+		/*for (Map.Entry<String, String> field : responseFields.entrySet()) {
 			validatedResponse.expectInBody(field.getKey().toString())
 			.expectInBody(field.getValue().toString());
-		}
+		}*/
 			
 		
 	}
 
 	@And("^response includes the following in any order$")
 	public void response_contains_in_any_order(Map<String,String> responseFields){
-		
-		for (Map.Entry<String, String> field : responseFields.entrySet()) {
+		validatedResponse.expectBodyKeyValue(responseFields);
+		/*for (Map.Entry<String, String> field : responseFields.entrySet()) {
 
 			
 			validatedResponse.expectInBody(field.getValue().toString());
-		}
+		}*/
 	}
 	
 

@@ -12,7 +12,7 @@
         "before": [
           {
             "result": {
-              "duration": 2469623,
+              "duration": 2190006,
               "status": "passed"
             },
             "match": {
@@ -27,7 +27,7 @@
         "after": [
           {
             "result": {
-              "duration": 32753,
+              "duration": 32752,
               "status": "passed"
             },
             "match": {
@@ -40,7 +40,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1122371503,
+              "duration": 1050782732,
               "status": "passed"
             },
             "line": 9,
@@ -73,7 +73,7 @@
               "Expected Status Code: 200 Actual status code: 200"
             ],
             "result": {
-              "duration": 294771,
+              "duration": 444845,
               "status": "passed"
             },
             "line": 11,
@@ -91,13 +91,13 @@
           },
           {
             "output": [
-              "Expected body content: totalItems Actual body content: true",
-              "Expected body content: 1 Actual body content: true",
-              "Expected body content: kind Actual body content: true",
-              "Expected body content: books#volumes Actual body content: true"
+              "Expected body Key: totalItems Actual body content: totalItems",
+              "Expected body Value: 1 Actual body content: 1",
+              "Expected body Key: kind Actual body content: kind",
+              "Expected body Value: books#volumes Actual body content: books#volumes"
             ],
             "result": {
-              "duration": 240509,
+              "duration": 9143766,
               "status": "passed"
             },
             "line": 12,
@@ -125,12 +125,15 @@
           },
           {
             "output": [
-              "Expected body content: Steve Jobs Actual body content: true",
-              "Expected body content: Simon and Schuster Actual body content: true",
-              "Expected body content: 630 Actual body content: true"
+              "Expected body Key: items.volumeInfo.title Actual body content: items.volumeInfo.title",
+              "Expected body Value: Steve Jobs Actual body content: Steve Jobs",
+              "Expected body Key: items.volumeInfo.publisher Actual body content: items.volumeInfo.publisher",
+              "Expected body Value: Simon and Schuster Actual body content: Simon and Schuster",
+              "Expected body Key: items.volumeInfo.pageCount Actual body content: items.volumeInfo.pageCount",
+              "Expected body Value: 630 Actual body content: 630"
             ],
             "result": {
-              "duration": 906800,
+              "duration": 1938254,
               "status": "passed"
             },
             "line": 15,

@@ -51,6 +51,17 @@ public class RestValidator {
 		return this;
 	}
 	
+	public RestValidator expectBodyKeyValue(Map<String, String> body) {
+		//Set<String> keys = body.keySet();
+		for (Map.Entry<String, String> field : body.entrySet()) {
+			scenario.write("Expected body Key: "+field.getKey()+" Actual body content: "+response.getResponseBody().valueOf(field.getKey()));
+			scenario.write("Expected body Value: "+field.getValue()+" Actual body content: "+response.getResponseBody().valueOf(field.getValue()));
+			Assert.assertEquals("Body doesnt contain Key - " + field.getKey(), field.getKey(), response.getResponseBody().valueOf(field.getKey()));
+			Assert.assertEquals("Body doesnt contain Value - " + field.getValue(), field.getValue(), response.getResponseBody().valueOf(field.getValue()));
+		}
+		return this;
+	}
+	
 	
 	
 	public RestValidator printBody(){

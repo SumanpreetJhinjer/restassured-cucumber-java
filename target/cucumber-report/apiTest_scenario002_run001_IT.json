@@ -12,7 +12,7 @@
         "before": [
           {
             "result": {
-              "duration": 4956261953,
+              "duration": 14879859565,
               "status": "passed"
             },
             "match": {
@@ -27,7 +27,7 @@
         "after": [
           {
             "result": {
-              "duration": 143230,
+              "duration": 134431,
               "status": "passed"
             },
             "match": {
@@ -40,7 +40,7 @@
         "steps": [
           {
             "result": {
-              "duration": 6826812524,
+              "duration": 6949841518,
               "status": "passed"
             },
             "line": 9,
@@ -61,7 +61,7 @@
               "Expected Status Code: 200 Actual status code: 200"
             ],
             "result": {
-              "duration": 76108593,
+              "duration": 126213792,
               "status": "passed"
             },
             "line": 10,
@@ -79,13 +79,13 @@
           },
           {
             "output": [
-              "Expected body content: id Actual body content: true",
-              "Expected body content: 2 Actual body content: true",
-              "Expected body content: first_name Actual body content: true",
-              "Expected body content: Janet Actual body content: true"
+              "Expected body Key: id Actual body content: id",
+              "Expected body Value: 2 Actual body content: 2",
+              "Expected body Key: first_name Actual body content: first_name",
+              "Expected body Value: Janet Actual body content: Janet"
             ],
             "result": {
-              "duration": 4449917,
+              "duration": 4565773,
               "status": "passed"
             },
             "line": 11,
