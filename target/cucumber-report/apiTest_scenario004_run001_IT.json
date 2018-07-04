@@ -12,7 +12,7 @@
         "before": [
           {
             "result": {
-              "duration": 3960310042,
+              "duration": 13006914652,
               "status": "passed"
             },
             "match": {
@@ -27,7 +27,7 @@
         "after": [
           {
             "result": {
-              "duration": 119766,
+              "duration": 525992,
               "status": "passed"
             },
             "match": {
@@ -40,7 +40,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4807487183,
+              "duration": 30138071601,
               "status": "passed"
             },
             "line": 9,
@@ -61,7 +61,7 @@
               "Expected Status Code: 204 Actual status code: 204"
             ],
             "result": {
-              "duration": 4263669,
+              "duration": 11826524,
               "status": "passed"
             },
             "line": 10,

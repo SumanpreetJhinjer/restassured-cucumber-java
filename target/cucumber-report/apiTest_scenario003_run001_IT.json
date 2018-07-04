@@ -12,7 +12,7 @@
         "before": [
           {
             "result": {
-              "duration": 4222750551,
+              "duration": 12973264811,
               "status": "passed"
             },
             "match": {
@@ -27,7 +27,7 @@
         "after": [
           {
             "result": {
-              "duration": 140297,
+              "duration": 186737,
               "status": "passed"
             },
             "match": {
@@ -40,7 +40,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4861670780,
+              "duration": 30148024399,
               "status": "passed"
             },
             "line": 9,
@@ -71,7 +71,7 @@
               "Expected Status Code: 201 Actual status code: 201"
             ],
             "result": {
-              "duration": 95122054,
+              "duration": 10925591,
               "status": "passed"
             },
             "line": 12,
@@ -95,7 +95,7 @@
               "Expected body Value: Test Analyst Actual body content: Test Analyst"
             ],
             "result": {
-              "duration": 1246544,
+              "duration": 384181896,
               "status": "passed"
             },
             "line": 13,

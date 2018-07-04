@@ -12,7 +12,7 @@
         "before": [
           {
             "result": {
-              "duration": 2398741,
+              "duration": 5001329,
               "status": "passed"
             },
             "match": {
@@ -27,7 +27,7 @@
         "after": [
           {
             "result": {
-              "duration": 76748,
+              "duration": 68437,
               "status": "passed"
             },
             "match": {
@@ -40,7 +40,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1046266821,
+              "duration": 1710313953,
               "status": "passed"
             },
             "line": 9,
@@ -58,7 +58,7 @@
           },
           {
             "result": {
-              "duration": 53284,
+              "duration": 50839,
               "status": "passed"
             },
             "line": 10,
@@ -73,7 +73,7 @@
               "Expected Status Code: 200 Actual status code: 200"
             ],
             "result": {
-              "duration": 187226,
+              "duration": 252730,
               "status": "passed"
             },
             "line": 11,
@@ -97,7 +97,7 @@
               "Expected body Value: books#volumes Actual body content: books#volumes"
             ],
             "result": {
-              "duration": 13120486,
+              "duration": 20426700,
               "status": "passed"
             },
             "line": 12,
@@ -133,7 +133,7 @@
               "Expected body Value: 630 Actual body content: 630"
             ],
             "result": {
-              "duration": 1988604,
+              "duration": 1169307,
               "status": "passed"
             },
             "line": 15,
