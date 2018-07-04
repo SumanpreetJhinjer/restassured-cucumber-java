@@ -86,7 +86,7 @@
 							<!--<sourceRunnerTemplateFile>src/test/resources/cucable.template</sourceRunnerTemplateFile> -->
 
 							<!-- process all features in the given directory -->
-							<sourceFeatures>src\test\resources\features\</sourceFeatures>
+							<sourceFeatures>src\test\resources\features</sourceFeatures>
 
 							<!-- process a specific feature file in the given directory -->
 							<!--<sourceFeatures>src/test/resources/features/testfeature/MyTest1.feature</sourceFeatures> -->
