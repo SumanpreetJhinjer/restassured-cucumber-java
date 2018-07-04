@@ -14,8 +14,8 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.failsafe.plugin.version>2.20.1</maven.failsafe.plugin.version>
 		<maven.build.helper.plugin.version>3.0.0</maven.build.helper.plugin.version>
-		<generated.runner.directory>${project.build.directory}\parallel\runners</generated.runner.directory>
-		<generated.feature.directory>${project.build.directory}\parallel\features</generated.feature.directory>
+		<generated.runner.directory>${project.build.directory}/parallel/runners</generated.runner.directory>
+		<generated.feature.directory>${project.build.directory}/parallel/features</generated.feature.directory>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -81,7 +81,7 @@
 						</goals>
 						<configuration>
 							<!-- This can be either a Java class file or a text based template -->
-							<sourceRunnerTemplateFile>src\test\java\runner\cucable.java
+							<sourceRunnerTemplateFile>src/test/java/runner/cucable.java
 							</sourceRunnerTemplateFile>
 							<!--<sourceRunnerTemplateFile>src/test/resources/cucable.template</sourceRunnerTemplateFile> -->
 
@@ -195,8 +195,8 @@
 					</execution>
 				</executions>
 				<configuration>
-					<sourceJsonReportDirectory>${project.build.directory}\cucumber-report</sourceJsonReportDirectory>
-					<generatedHtmlReportDirectory>${project.build.directory}\test-report</generatedHtmlReportDirectory>
+					<sourceJsonReportDirectory>${project.build.directory}/cucumber-report</sourceJsonReportDirectory>
+					<generatedHtmlReportDirectory>${project.build.directory}/test-report</generatedHtmlReportDirectory>
 				</configuration>
 			</plugin>
 
