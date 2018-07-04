@@ -12,7 +12,7 @@
         "before": [
           {
             "result": {
-              "duration": 14856911914,
+              "duration": 4838304681,
               "status": "passed"
             },
             "match": {
@@ -27,7 +27,7 @@
         "after": [
           {
             "result": {
-              "duration": 162784,
+              "duration": 170606,
               "status": "passed"
             },
             "match": {
@@ -40,7 +40,7 @@
         "steps": [
           {
             "result": {
-              "duration": 6921197405,
+              "duration": 4938278479,
               "status": "passed"
             },
             "line": 9,
@@ -61,7 +61,7 @@
               "Expected Status Code: 200 Actual status code: 200"
             ],
             "result": {
-              "duration": 72901798,
+              "duration": 4077909,
               "status": "passed"
             },
             "line": 10,
@@ -85,7 +85,7 @@
               "Expected body Value: George Actual body content: George"
             ],
             "result": {
-              "duration": 8727273,
+              "duration": 11212540,
               "status": "passed"
             },
             "line": 11,
