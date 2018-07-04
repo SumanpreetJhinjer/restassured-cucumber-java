@@ -1,4 +1,4 @@
-# blocklist
-branches:
-  except:
-  - gh-pages
+language: java
+sudo: false # faster builds
+
+script: "mvn clean verify"
